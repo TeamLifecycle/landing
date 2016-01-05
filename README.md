@@ -6,3 +6,8 @@
 - `$ gulp test:auto` to run your unit tests with Karma in watch mode
 - `$ gulp protractor` to launch your e2e tests with Protractor
 - `$ gulp protractor:dist` to launch your e2e tests with Protractor on the dist files
+
+
+
+###### Gratzi!
+This is generated via https://github.com/Swiip/generator-gulp-angular

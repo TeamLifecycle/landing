@@ -1,8 +1,9 @@
 angular.module 'landing'
-  .controller 'LandingController', ($timeout, webDevTec, toastr) ->
+  .controller 'LandingController', ($timeout, webDevTec, toastr, $location) ->
     'ngInject'
     vm = this
     activate = ->
+      console.log "activate"
       getWebDevTec()
       $timeout (->
         vm.classAnimation = 'rubberBand'
