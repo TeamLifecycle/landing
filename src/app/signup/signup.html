@@ -9,30 +9,30 @@
       <div>
         <acme-navbar></acme-navbar>
       </div>
-      <div class="container">
+      <div class="container content">
         <h2 class="text-center">Beta Sign Up</h2>
-        <form >
+        <form ng-submit="submitSignup()">
           <div class="form-group">
-            <label class="control-label" for="name" ng-model="name">First &amp; Last Name</label>
-            <input type="text" class="form-control input-lg" id="name" autofocus>
+            <label class="control-label" for="fullname">First &amp; Last Name</label>
+            <input type="text" class="form-control input-lg" id="fullname" ng-model="fullname" autofocus>
           </div>
           <div class="form-group">
             <label class="control-label" for="email">Email Address</label>
-            <input type="text" class="form-control input-lg" id="email">
+            <input type="text" class="form-control input-lg" id="email" ng-model="email">
           </div>
           <div class="form-group">
             <label class="control-label" for="company">Company</label>
-            <input type="text" class="form-control input-lg" id="company">
+            <input type="text" class="form-control input-lg" id="company" ng-model="company">
           </div>
           <div class="form-group">
             <label class="control-label" for="hear">How'd You Hear About Us?</label>
-            <input type="text" class="form-control input-lg" id="hear">
+            <input type="text" class="form-control input-lg" id="hear" ng-model="hear">
           </div>
           <div class="form-group">
             <label class="control-label" for="users">Number of Users</label>
-            <input type="text" class="form-control input-lg" id="users">
+            <input type="text" class="form-control input-lg" id="users" ng-model="users">
           </div>
-          <button type="submit" class="btn btn-lg btn-success btn-block request" data-loading-text="Requesting..." data-finished-text="Request" ng-click="submitForm2">Submit</button>
+          <button type="submit" class="btn btn-lg btn-success btn-block request" data-loading-text="Requesting..." data-finished-text="Request" ng-click="handleClick()">Submit</button>
         </form>
       </div>
       <footer-main></footer-main>

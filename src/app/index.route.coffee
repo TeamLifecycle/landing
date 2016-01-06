@@ -12,11 +12,14 @@ angular.module 'landing'
         templateUrl: 'app/signup/signup.html'
         controller: 'SignupController'
         controllerAs: 'signup'
-      .state 'about',
-        url: '/about'
-        templateUrl: 'app/about/about.html'
-        controller: 'AboutController'
-        controllerAs: 'about'
+      .state 'thanks',
+        url: '/thanks'
+        templateUrl: 'app/signup/thanks.html'
+      # .state 'about',
+      #   url: '/about'
+      #   templateUrl: 'app/about/about.html'
+      #   controller: 'AboutController'
+      #   controllerAs: 'about'
       # .state 'contact',
       #   url: '/contact'
       #   templateUrl: 'app/contact/contact.html'

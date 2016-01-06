@@ -22,6 +22,10 @@ html {
   // overflow-y: overlay;
 }
 
+.content {
+  min-height: calc(100vh - 370px);
+}
+
 .a {
   color: $white;
   float: left;
