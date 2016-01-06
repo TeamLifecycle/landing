@@ -15,7 +15,8 @@ angular.module 'landing'
       signup.save null,
         success: (signup) ->
           $state.go 'thanks'
-          slackNotifier.configure url: 'https://hooks.slack.com/services/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'
+          slackNotifier.configure
+            url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
           slackNotifier.send "New landing page signup: #{JSON.stringify($scope.newsignup)}"
         error: (signup, error) ->
           console.error signup, error
