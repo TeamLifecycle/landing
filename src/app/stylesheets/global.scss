@@ -2,7 +2,7 @@
 
 @import 'variables';
 @import 'mixins';
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900);
 
 // $import "toggle";
 
@@ -532,4 +532,51 @@ input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button { 
     -webkit-appearance: none; 
      margin: 0; 
+}
+
+.btn-inverse {
+  &.btn-primary {
+    background: $white;
+    color: $brand-primary;
+    border: none;
+    &:hover {
+      opacity: .8;
+      color: $white;
+    }
+  }
+}
+
+.white {
+  color: $white;
+}
+
+.btn-transparent {
+  background: none;
+  box-shadow: none;
+  &.btn-primary { 
+    color: $brand-primary;
+    border: 1px solid $brand-primary; 
+  }
+  &.btn-success { 
+    color: $brand-success; 
+    border: 1px solid $brand-success;
+  }
+  &.btn-default { 
+    color: $brand-grey-dark;
+    border: 1px solid $brand-grey-dark;
+  }
+  &:hover {
+    opacity: .8;
+    color: inherit;
+  }
+}
+
+.btn.early-access-btn {
+    border: 2px solid $white;
+    text-transform: none;
+    font-weight: 400;
+    color: $white;
+    box-shadow: none;
+    // border-radius: 6px;
+    padding: 14px 44px;
 }

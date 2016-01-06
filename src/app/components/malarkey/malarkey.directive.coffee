@@ -6,14 +6,14 @@ angular.module 'landing'
       vm = this
 
       activate = ->
-        getContributors().then ->
-          $log.info 'Activated Contributors View'
-          return
+        # getContributors().then ->
+        #   $log.info 'Activated Contributors View'
+        #   return
 
-      getContributors = ->
-        githubContributor.getContributors(10).then (data) ->
-          vm.contributors = data
-          vm.contributors
+      # getContributors = ->
+      #   githubContributor.getContributors(10).then (data) ->
+      #     vm.contributors = data
+      #     vm.contributors
 
       vm.contributors = []
       activate()
@@ -24,7 +24,7 @@ angular.module 'landing'
       typist = malarkey(el[0],
         typeSpeed: 40
         deleteSpeed: 40
-        pauseDelay: 800
+        pauseDelay: 3000
         loop: true
         postfix: ' ')
       el.addClass 'acme-malarkey'

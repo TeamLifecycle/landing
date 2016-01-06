@@ -1,0 +1,11 @@
+@import 'variables';
+
+.landing {
+    .news {
+        background-color: $brand-grey-light;
+        padding: 20px;
+        .title {
+        	margin: 0 10px;
+        }
+    }
+}

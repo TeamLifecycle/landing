@@ -77,13 +77,13 @@
     }
 
     // typed.js stuff
-    .typed-cursor{
-        opacity: 1;
-        -webkit-animation: blink 1.0s infinite; //0.7s
-        -moz-animation: blink 1.0s infinite;
-        animation: blink 1.0s infinite;
-        color: $brand-grey-light;
-    }
+    // .typed-cursor{
+    //     opacity: 1;
+    //     -webkit-animation: blink 1.5s infinite; //0.7s
+    //     -moz-animation: blink 1.5s infinite;
+    //     animation: blink 1.5s infinite;
+    //     color: $brand-grey-light;
+    // }
 
     @keyframes blink{
         0% { opacity:1; }
@@ -106,7 +106,7 @@
 
 
 
-@include MQ(S) {
+@include MQ(Splus) {
     .hello {
         height: 570px;
         h1.supersize {
@@ -124,7 +124,7 @@
             right: 5%;
         }
         .typed-container {
-            width: 220px;
+            width: 250px;
         }
         .hero-image {
             // background: linear-gradient(to bottom, green, lightgreen);
@@ -132,7 +132,7 @@
         }
     }
 }
-@include MQ(MD) {
+@include MQ(Mplus) {
     .hello {
         height: 710px;
         h1.supersize {
@@ -152,8 +152,11 @@
     }
 
 }
-@include MQ(LG) {
+@include MQ(Lplus) {
     .hello {
+        h1.supersize {
+            font-size: 55px;
+        }
         height: 800px;
         .caption {
             top: 55px;
