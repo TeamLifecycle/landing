@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+nav.navbar {
+	img.header-logo {
+		height: 30px;
+		&.app-header {
+			margin-top: 8px;
+		}
+	}
+	.navbar-brand {
+		padding: 15px 0 0;
+		&.middle {
+			opacity: .9;
+		}
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.navbar-right.header-links {
+		&> li a {
+			margin-top: 15px;
+			font-weight: 500;
+			color: $white;
+
+			&:focus, &:hover {
+				background: transparent;
+				opacity: .7;
+			}
+		}
+	}
+
+	&.navbar-clear {
+		.navbar-nav {
+			&> li > a {
+				color: $brand-grey-dark;
+			}
+			button#profileDropdownMenu {
+				color:  $brand-grey-dark;
+				.name {
+					color:  $brand-grey-dark!important;
+				}
+			}
+		}
+	}
+}

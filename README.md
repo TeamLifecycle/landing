@@ -1,3 +1,7 @@
+# Contributing
+- `$ npm install` to install npm dependencies
+- `$ bower install` to install bower dependencies
+
 # Running App
 - `$ gulp` to build an optimized version of your application in folder dist
 - `$ gulp serve` to start BrowserSync server on your source files with live reload
@@ -8,6 +12,9 @@
 - `$ gulp protractor:dist` to launch your e2e tests with Protractor on the dist files
 
 
+# Deploy
+- `aws s3 sync . s3://lifecycle.io --delete --exclude ".git" --region=us-east-1` (must configure aws credentials first)
+
 
 ###### Gratzi!
-This is generated via https://github.com/Swiip/generator-gulp-angular
+This is was originally generated via https://github.com/Swiip/generator-gulp-angular
