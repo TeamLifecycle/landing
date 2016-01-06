@@ -17,4 +17,4 @@
 
 
 ###### Gratzi!
-This is was originally generated via https://github.com/Swiip/generator-gulp-angular
+This is was originally generated via https://github.com/Swiip/generator-gulp-angular.
