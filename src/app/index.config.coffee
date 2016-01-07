@@ -9,6 +9,4 @@ angular.module 'landing'
     toastrConfig.positionClass = 'toast-top-right'
     toastrConfig.preventDuplicates = true
     toastrConfig.progressBar = true
-    # console.log "ParseProvider", ParseProvider
-    # ParseProvider.initialize("PARSE_APPLICATION_ID", "PARSE_REST_API_KEY");
 

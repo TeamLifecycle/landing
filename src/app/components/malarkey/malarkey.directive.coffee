@@ -1,7 +1,7 @@
 angular.module 'landing'
   .directive 'acmeMalarkey', ->
 
-    MalarkeyController = ($log, githubContributor) ->
+    MalarkeyController = ($log) ->
       'ngInject'
       vm = this
 

@@ -6,7 +6,7 @@
 #   beforeEach inject ($controller, webDevTec, toastr) ->
 #     spyOn(webDevTec, 'getTec').and.returnValue [{}, {}, {}, {}, {}]
 #     spyOn(toastr, 'info').and.callThrough()
-#     vm = $controller 'MainController'
+#     vm = $controller 'LandingController'
 
 #   it 'should have a timestamp creation date', () ->
 #     expect(vm.creationDate).toEqual jasmine.any Number
