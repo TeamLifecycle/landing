@@ -15,6 +15,9 @@ angular.module 'landing'
       .state 'thanks',
         url: '/thanks'
         templateUrl: 'app/pages/signup/thanks.html'
+      .state 'unsubscribed',
+        url: '/unsubscribed'
+        templateUrl: 'app/pages/unsubscribed/unsubscribed.html'
       # .state 'about',
       #   url: '/about'
       #   templateUrl: 'app/pages/about/about.html'
