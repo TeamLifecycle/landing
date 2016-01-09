@@ -18,6 +18,9 @@ angular.module 'landing'
       .state 'unsubscribed',
         url: '/unsubscribed'
         templateUrl: 'app/pages/unsubscribed/unsubscribed.html'
+      .state '404',
+        url: '/404'
+        templateUrl: 'app/pages/404/404.html'
       # .state 'about',
       #   url: '/about'
       #   templateUrl: 'app/pages/about/about.html'
