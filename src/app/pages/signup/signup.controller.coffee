@@ -29,5 +29,5 @@ angular.module 'landing'
         console.error response if response
         slackNotifier.configure
           url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
-        slackNotifier.send "New landing real signup ERROR! #{response}"
+        slackNotifier.send "New landing real signup ERROR! #{JSON.stringify(response)}"
 

@@ -40,6 +40,6 @@ angular.module 'landing'
       #   controller: 'ContactController'
       #   controllerAs: 'contact'
     
-    $locationProvider.html5Mode true
+    # $locationProvider.html5Mode true
 
     $urlRouterProvider.otherwise '/'
