@@ -12,7 +12,7 @@
 - `$ gulp protractor:dist` to launch your e2e tests with Protractor on the dist files
 
 
-# Deploy
+# Deploy (should be no need, should be codeshipped)
 - `aws s3 sync . s3://lifecycle.io --delete --exclude ".git" --region=us-east-1` (must configure aws credentials first)
 
 

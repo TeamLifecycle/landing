@@ -1,23 +1,33 @@
+API_HOST = undefined
+
 angular.module 'landing'
-  .controller 'SignupController', ($scope, $location, $state) ->
+  .controller 'SignupController', ($scope, $location, $state, $http) ->
     'ngInject'
     vm = this
 
     $scope.submitSignup = ->
-      Parse.initialize "faBivJ7dLEip3KFvhmeGf1w4dqIzMu7UG9i1XOk9", "bfSdm0J6TJFlNM9EIvoRY4unbAxP0WKMqMIFMN3C"
-      Signup = Parse.Object.extend('signups')
-      signup = new Signup
-      signup.set 'fullName', $scope.newsignup.fullname
-      signup.set 'email', $scope.newsignup.email
-      signup.set 'company', $scope.newsignup.company
-      signup.set 'hearAbout', $scope.newsignup.hear
-      signup.set 'numberUsers', $scope.newsignup.users
-      signup.save null,
-        success: (signup) ->
-          $state.go 'thanks'
-          slackNotifier.configure
-            url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
-          slackNotifier.send "New landing page signup: #{JSON.stringify($scope.newsignup)}"
-        error: (signup, error) ->
-          console.error signup, error
+      email = $scope.newsignup.email
+
+      
+      switch document.location.hostname
+        when "localhost" then API_HOST = "http://localhost:3400/v1"
+        when "lifecycle.io" then API_HOST = "https://api.lifecycle.io/v1"
+        when "dev.lifecycle.io" then API_HOST = "http://api-dev.lifecycle.io/v1"
+      $http(
+        method: 'POST'
+        url: "#{API_HOST}/public/signup"
+        headers: "Content-Type": "application/json"
+        data: email: email
+      ).then ((response) ->
+        # success
+        $state.go 'thanks'
+        slackNotifier.configure
+          url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
+        slackNotifier.send "New landing real signup! (#{email})"
+      ), (response) ->
+        # error
+        console.error response if response
+        slackNotifier.configure
+          url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
+        slackNotifier.send "New landing real signup ERROR! #{response}"
 
