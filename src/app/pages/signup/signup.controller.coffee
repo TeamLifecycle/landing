@@ -8,8 +8,8 @@ angular.module 'landing'
     $scope.submitSignup = ->
       email = $scope.newsignup.email
 
-      
-      switch document.location.hostname
+      thisHost = document.location.hostname
+      switch thisHost
         when "localhost" then API_HOST = "http://localhost:3400/v1"
         when "lifecycle.io" then API_HOST = "https://api.lifecycle.io/v1"
         when "dev.lifecycle.io" then API_HOST = "http://api-dev.lifecycle.io/v1"
@@ -21,9 +21,10 @@ angular.module 'landing'
       ).then ((response) ->
         # success
         $state.go 'thanks'
-        slackNotifier.configure
-          url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
-        slackNotifier.send "New landing real signup! (#{email})"
+        unless thisHost is "localhost"
+          slackNotifier.configure
+            url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
+          slackNotifier.send "New landing real signup! (#{email})"
       ), (response) ->
         # error
         console.error response if response
