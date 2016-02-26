@@ -25,4 +25,7 @@ angular.module 'landing'
         error: (signup, error) ->
           console.error signup, error
           $("button[type=submit]").prop "disabled", false
-
+          unless thisHost is "localhost"
+            slackNotifier.configure
+              url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
+            slackNotifier.send "New landing beta signup ERROR! #{JSON.stringify(response)}"

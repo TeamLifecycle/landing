@@ -25,12 +25,13 @@ angular.module 'landing'
         unless thisHost is "localhost"
           slackNotifier.configure
             url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
-          slackNotifier.send "New landing real signup! (#{email})"
+          slackNotifier.send "New landing signup! (#{email})"
       ), (response) ->
         # error
         console.error response if response
         $("button[type=submit]").prop "disabled", false
-        slackNotifier.configure
-          url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
-        slackNotifier.send "New landing real signup ERROR! #{JSON.stringify(response)}"
+        unless thisHost is "localhost"
+          slackNotifier.configure
+            url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
+          slackNotifier.send "New landing signup ERROR! #{JSON.stringify(response)}"
 
