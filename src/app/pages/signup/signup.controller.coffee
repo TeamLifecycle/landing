@@ -22,7 +22,7 @@ angular.module 'landing'
         # success
         $state.go 'thanks'
         $("button[type=submit]").prop "disabled", false
-        unless thisHost is "localhost"
+        unless thisHost is "localhost" or window.DEV
           slackNotifier.configure
             url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
           slackNotifier.send "New landing signup! (#{email})"
