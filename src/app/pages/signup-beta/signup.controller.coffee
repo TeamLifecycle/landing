@@ -40,6 +40,8 @@ angular.module 'landing'
               slackNotifier.configure
                 url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
               slackNotifier.send "New landing page beta signup: #{JSON.stringify($scope.newsignup)}"
+          ), (response) ->
+            
         error: (signup, error) ->
           console.error signup, error
           $("button[type=submit]").prop "disabled", false
