@@ -1,3 +1,5 @@
+API_HOST = undefined
+
 angular.module 'landing'
   .controller 'SignupBetaController', ($scope, $location, $state) ->
     'ngInject'
@@ -18,7 +20,21 @@ angular.module 'landing'
         success: (signup) ->
           $state.go 'thanks-beta'
           $("button[type=submit]").prop "disabled", false
-          unless document.location.hostname is "localhost"
+
+          # send to our api
+          thisHost = document.location.hostname
+          switch thisHost
+            when "localhost" then API_HOST = "http://localhost:3400/v1"
+            when "lifecycle.io" then API_HOST = "https://api.lifecycle.io/v1"
+            when "dev.lifecycle.io" then API_HOST = "http://api-dev.lifecycle.io/v1"
+          $http(
+            method: 'POST'
+            url: "#{API_HOST}/public/signup/beta"
+            headers: "Content-Type": "application/json"
+            data: email: email
+          ).then ((response) ->
+
+          unless thisHost is "localhost" or window.DEV
             slackNotifier.configure
               url: "https://hooks.slack.com/services/" + "T029N0883/B0CLT34KW/UqDB8JCzoV977GMlK9exFuJg"
             slackNotifier.send "New landing page beta signup: #{JSON.stringify($scope.newsignup)}"
