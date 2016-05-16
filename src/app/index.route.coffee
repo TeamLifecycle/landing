@@ -26,6 +26,20 @@ angular.module 'landing'
       .state 'unsubscribed',
         url: '/unsubscribed'
         templateUrl: 'app/pages/unsubscribed/unsubscribed.html'
+
+      .state 'support',
+        url: '/products/support'
+        templateUrl: 'app/pages/products/support.html'
+      .state 'marketing',
+        url: '/products/marketing'
+        templateUrl: 'app/pages/products/marketing.html'
+      .state 'pricing',
+        url: '/pricing'
+        templateUrl: 'app/pages/pricing/pricing.html'
+      .state 'integrations',
+        url: '/integrations'
+        templateUrl: 'app/pages/integrations/integrations.html'
+
       .state '404',
         url: '/404'
         templateUrl: 'app/pages/404/404.html'
