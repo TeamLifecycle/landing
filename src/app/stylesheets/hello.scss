@@ -34,14 +34,13 @@
 
     .hero-image {
         // background: linear-gradient(to bottom, green, lightgreen);
-        background: url(/assets/images/header.png) bottom no-repeat;
         // background: url(/img/landing/doodle-header.png) bottom no-repeat;
         // background-color: @brand-success;
         // background-size: 200%;
         // overflow: hidden;
         // background: $brand-aqua;
-        // background: -webkit-linear-gradient(to left, $brand-aqua , $brand-bluejeans );
-        // background: linear-gradient(to left, $brand-aqua , $brand-bluejeans)
+        background: -webkit-linear-gradient(to left, $brand-aqua , $brand-bluejeans );
+        background: linear-gradient(to left, $brand-aqua , $brand-bluejeans)
     }
 
     // .img-wrapper {
@@ -108,7 +107,7 @@
 
 @include MQ(Splus) {
     .hello {
-        height: 410px;
+        height: 470px;
         h1.supersize {
             font-size: 45px;
         }
@@ -137,6 +136,9 @@
         height: 550px;
         h1.supersize {
             font-size: 55px;
+        }
+        .hero-image {
+            background: url(/assets/images/header.png) bottom no-repeat;
         }
         .lead {
             font-size: 20px;

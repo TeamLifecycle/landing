@@ -31,12 +31,12 @@
         background: #FAFAFA;
         padding-bottom: 0;
         header {
-            padding: 40px 0 100px;
+            padding: 20px;
         }
         .descriptions {
 
         }
-        $height: 450px;
+        $height: 300px;
         .column-left {
             font-size: 18px;
             height: $height;
@@ -86,12 +86,13 @@
         }
     }
     section.integrations-overview {
-        height: 680px;
+        height: 490px;
         background-color: rgb(163, 193, 205);
         background-image: url('/assets/images/landing/integrations-tornado.png');
         background-repeat: no-repeat;
         background-size: 740px;
         background-position: right -240px bottom -20px;
+        padding: 40px 0;
         .blurb {
             padding-top: 40px;
             img.icon {
@@ -131,12 +132,23 @@
 }
 @include MQ(Mplus) {
     section.features {
+        height: 450px;
+        header {
+            padding: 40px 20px 100px;
+        }
+        .column-left {
+            height: 450px;
+        }
         .column-right.tab-content {
             .tab-pane {
                 background-size: 140%!important;
                 background-position: left 10px top 0px!important;
             }
         }
+    }
+    section.integrations-overview {
+        height: 680px;
+        padding: 80px 0;
     }
 }
 
