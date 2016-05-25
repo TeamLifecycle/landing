@@ -134,7 +134,7 @@
 }
 @include MQ(Mplus) {
     .hello {
-        height: 710px;
+        height: 550px;
         h1.supersize {
             font-size: 55px;
         }
@@ -157,10 +157,10 @@
 }
 @include MQ(Lplus) {
     .hello {
+        height: 600px;
         h1.supersize {
             font-size: 55px;
         }
-        height: 800px;
         .caption {
             top: 55px;
             left: 11%;
