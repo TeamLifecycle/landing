@@ -70,10 +70,10 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: left 0px top 130px;
-                &#tab-one {background-image: url('/assets/images/landing/screens/people.png');}
-                &#tab-two {background-image: url('/assets/images/landing/screens/inbox.png');}
-                &#tab-three {background-image: url('/assets/images/landing/screens/3.png');}
-                &#tab-four {background-image: url('/assets/images/landing/screens/4.png');}
+                &#tab-one {background-image: url('/assets/images/landing/screens/inbox.png');}
+                &#tab-two {background-image: url('/assets/images/landing/screens/campaign.png');}
+                &#tab-three {background-image: url('/assets/images/landing/screens/people.png');}
+                // &#tab-four {background-image: url('/assets/images/landing/screens/4.png');}
             }
         }
     }
@@ -92,9 +92,6 @@
         background-repeat: no-repeat;
         background-size: 740px;
         background-position: right -240px bottom -20px;
-        p {
-            line-height: 28px;
-        }
         .blurb {
             padding-top: 40px;
             img.icon {
@@ -102,12 +99,17 @@
             }
             .title {
                 margin-bottom: 20px;
+                line-height: 32px;
+            }
+            p {
+                line-height: 32px;
             }
         }
     }
 
     #header {
         height: 100%;
+        overflow: hidden;
         .inner, .inner .item {
             height: inherit;
         }

@@ -379,7 +379,7 @@ hr.custom {
   margin: -2px 0;
 }
 strong {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 // .hand {
@@ -571,4 +571,8 @@ input[type=number]::-webkit-inner-spin-button,
     // padding: 14px 44px;
     padding: 10px 44px;
     border-radius: 100px;
+    &.btn-white {
+      border: 2px solid white;
+      color: white;
+    }
 }

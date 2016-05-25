@@ -34,11 +34,11 @@
 
     .hero-image {
         // background: linear-gradient(to bottom, green, lightgreen);
-        // background: url(/img/landing/doodle-header.svg) bottom no-repeat;
+        background: url(/assets/images/header.png) bottom no-repeat;
         // background: url(/img/landing/doodle-header.png) bottom no-repeat;
         // background-color: @brand-success;
-        background-size: 200%;
-        overflow: hidden;
+        // background-size: 200%;
+        // overflow: hidden;
         // background: $brand-aqua;
         // background: -webkit-linear-gradient(to left, $brand-aqua , $brand-bluejeans );
         // background: linear-gradient(to left, $brand-aqua , $brand-bluejeans)
@@ -59,7 +59,7 @@
         .item {
             img {
                 margin: 0 auto;
-                width: 800px;
+                width: 580px;
                 &.carousel-3 {
                     // hack to fix png's being a little off height/width wise on carousel
                     width: 803px;
