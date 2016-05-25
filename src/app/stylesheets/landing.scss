@@ -64,8 +64,8 @@
             height: $height;
             .tab-pane {
                 height: $height;
-                background-size: 600px;
                 background-repeat: no-repeat;
+                background-size: contain;
                 &#tab-one {background-image: url('/assets/images/landing/screens/1.png');}
                 &#tab-two {background-image: url('/assets/images/landing/screens/2.png');}
                 &#tab-three {background-image: url('/assets/images/landing/screens/3.png');}
@@ -74,9 +74,11 @@
         }
     }
     section.integration-logos {
-        padding: 40px 0;
-        img {
-            height: 50px;
+        div.logo-wrapper {
+            padding: 20px 0;
+            img {
+               height: 50px;
+            }
         }
     }
     section.integrations-overview {
@@ -110,6 +112,21 @@
     // hack for better header spacing on landing page
     .header.header-fix {
       margin: 0 0 20px 0;
+    }
+}
+
+@include MQ(Mneg) {
+    section.integrations-overview {
+        background-image: none!important;
+    }
+}
+@include MQ(Mplus) {
+    section.features {
+        .column-right.tab-content {
+            .tab-pane {
+                background-size: 600px!important;
+            }
+        }
     }
 }
 
