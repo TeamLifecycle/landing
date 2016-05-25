@@ -27,6 +27,76 @@
         font-size: 28px;
     }
 
+    section.features {
+        header {
+            padding: 40px;
+        }
+        .descriptions {
+
+        }
+        .column-left {
+            font-size: 18px;
+            li {
+                &.active {
+                    border-bottom: 4px solid $brand-primary;
+                    a {
+                        background: inherit;                        
+                        color: inherit;                   
+                    }
+                }
+                &:not(.active) {
+                    opacity: .2;
+                    border-bottom: 4px solid transparent;
+                    &:hover, a:hover {
+                        background: inherit;
+                        color: inherit;
+                        opacity: .7;
+                    }
+                }
+                a {
+                    padding: 20px 0;
+                    font-weight: inherit;
+                }
+            }
+        }
+        .column-right.tab-content {
+            $height: 300px;
+            height: $height;
+            .tab-pane {
+                height: $height;
+                background-size: 600px;
+                background-repeat: no-repeat;
+                &#tab-one {background-image: url('/assets/images/landing/screens/1.png');}
+                &#tab-two {background-image: url('/assets/images/landing/screens/2.png');}
+                &#tab-three {background-image: url('/assets/images/landing/screens/3.png');}
+                &#tab-four {background-image: url('/assets/images/landing/screens/4.png');}
+            }
+        }
+    }
+    section.integration-logos {
+        padding: 40px 0;
+        img {
+            height: 50px;
+        }
+    }
+    section.integrations-overview {
+        height: 680px;
+        background-color: rgb(163, 193, 205);
+        background-image: url('/assets/images/landing/integrations-tornado.png');
+        background-repeat: no-repeat;
+        background-size: 740px;
+        background-position: right -240px bottom -20px;
+        .blurb {
+            padding-top: 40px;
+            img.icon {
+                height: 30px;
+            }
+            .title {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
     #header {
         height: 100%;
         .inner, .inner .item {
