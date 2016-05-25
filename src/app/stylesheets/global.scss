@@ -575,11 +575,11 @@ input[type=number]::-webkit-inner-spin-button,
   }
 }
 
-.btn.early-access-btn {
-    border: 2px solid $white;
+.btn.btn-transparent.early-access-btn {
+    border: 2px solid $brand-primary;
     text-transform: none;
     font-weight: 400;
-    color: $white;
+    color: $brand-primary;
     box-shadow: none;
     // border-radius: 6px;
     padding: 14px 44px;
