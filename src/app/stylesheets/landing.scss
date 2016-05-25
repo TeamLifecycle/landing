@@ -132,17 +132,20 @@
 }
 @include MQ(Mplus) {
     section.features {
-        height: 450px;
+        height: 650px!important;
+        overflow: hidden;
         header {
-            padding: 40px 20px 100px;
+            padding: 40px 20px 100px!important;
         }
-        .column-left {
-            height: 450px;
+        .column-left, .columns-right {
+            height: 450px!important;
         }
         .column-right.tab-content {
+            height: 450px!important;
             .tab-pane {
                 background-size: 140%!important;
                 background-position: left 10px top 0px!important;
+                height: 590px!important;
             }
         }
     }
