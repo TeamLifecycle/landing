@@ -2,7 +2,7 @@
 
 @import 'variables';
 @import 'mixins';
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,900);
 
 // $import "toggle";
 
@@ -78,24 +78,6 @@ html {
     color: $white;
   }
 }
-
-label[data-user-value] {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-  background-color: $brand-primary;
-  color: #ffffff;
-  font-family: Roboto, 'Helvetica Neue', Helvetica, Arial;
-  display: inline;
-  padding: .2em .6em .3em;
-  font-weight: 400;
-  line-height: 1;
-  color: #ffffff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: .25em;
-  font-size: 10.5px;
-}
-
 
 .letter-circle {
   border-radius: 50%;
