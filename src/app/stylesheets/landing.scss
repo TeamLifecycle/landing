@@ -28,14 +28,18 @@
     }
 
     section.features {
+        background: #FAFAFA;
+        padding-bottom: 0;
         header {
-            padding: 40px;
+            padding: 40px 0 70px;
         }
         .descriptions {
 
         }
+        $height: 450px;
         .column-left {
             font-size: 18px;
+            height: $height;
             li {
                 &.active {
                     border-bottom: 4px solid $brand-primary;
@@ -60,14 +64,14 @@
             }
         }
         .column-right.tab-content {
-            $height: 300px;
             height: $height;
             .tab-pane {
                 height: $height;
                 background-repeat: no-repeat;
                 background-size: contain;
-                &#tab-one {background-image: url('/assets/images/landing/screens/1.png');}
-                &#tab-two {background-image: url('/assets/images/landing/screens/2.png');}
+                background-position: left 10px top 130px;
+                &#tab-one {background-image: url('/assets/images/landing/screens/people.png');}
+                &#tab-two {background-image: url('/assets/images/landing/screens/inbox.png');}
                 &#tab-three {background-image: url('/assets/images/landing/screens/3.png');}
                 &#tab-four {background-image: url('/assets/images/landing/screens/4.png');}
             }
@@ -75,7 +79,7 @@
     }
     section.integration-logos {
         div.logo-wrapper {
-            padding: 20px 0;
+            padding: 30px 0;
             img {
                height: 50px;
             }
@@ -88,6 +92,9 @@
         background-repeat: no-repeat;
         background-size: 740px;
         background-position: right -240px bottom -20px;
+        p {
+            line-height: 28px;
+        }
         .blurb {
             padding-top: 40px;
             img.icon {
@@ -124,7 +131,8 @@
     section.features {
         .column-right.tab-content {
             .tab-pane {
-                background-size: 600px!important;
+                background-size: 140%!important;
+                background-position: left 10px top 0px!important;
             }
         }
     }

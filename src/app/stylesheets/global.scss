@@ -23,7 +23,7 @@ html {
 }
 
 .content {
-  min-height: calc(100vh - 370px);
+  min-height: calc(100vh - 160px);
 }
 
 .a {
@@ -273,6 +273,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .marketing {
   padding: 100px 0;  
+}
+
+.marketing-sm {
+  padding: 40px 0;  
 }
 
 $blur: 3px;
@@ -582,5 +586,7 @@ input[type=number]::-webkit-inner-spin-button,
     color: $brand-primary;
     box-shadow: none;
     // border-radius: 6px;
-    padding: 14px 44px;
+    // padding: 14px 44px;
+    padding: 10px 44px;
+    border-radius: 100px;
 }
