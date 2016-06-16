@@ -21,7 +21,11 @@ html {
   // this causes scrollTo to not work
   // overflow-y: overlay;
 }
-
+.mobile-show { display: none;}
+   /* Smartphone Portrait and Landscape */
+   @media only screen
+   and (min-device-width : 320px)
+   and (max-device-width : 480px){ .mobile-show { display: inline;}}
 .content {
   min-height: calc(100vh - 160px);
 }
