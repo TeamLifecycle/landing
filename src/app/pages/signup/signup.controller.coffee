@@ -12,7 +12,7 @@ angular.module 'landing'
       switch thisHost
         when "localhost" then API_HOST = "http://localhost:3400/v1"
         when "lifecycle.io" then API_HOST = "https://api.lifecycle.io/v1"
-        when "dev.lifecycle.io" then API_HOST = "http://api-dev.lifecycle.io/v1"
+        when "dev.lifecycle.io" then API_HOST = "https://api-dev.lifecycle.io/v1"
       $http(
         method: 'POST'
         url: "#{API_HOST}/public/signup"
