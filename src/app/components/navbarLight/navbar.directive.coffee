@@ -5,6 +5,7 @@ angular.module 'landing'
       'ngInject'
       vm = this
       vm.relativeDate = moment(vm.creationDate).fromNow()
+      vm.signin = "https://www.espn.com"
 
       isActive = (route) ->
         return true if route is $state.current.name
