@@ -1,17 +1,17 @@
 angular.module 'landing'
   .directive 'acmeNavbarLight', ->
 
-    NavbarLightController = (moment, $urlRouter, $state) ->
+    NavbarLightController = (moment, config, $urlRouter, $state, $scope, $timeout) ->
       'ngInject'
       vm = this
       vm.relativeDate = moment(vm.creationDate).fromNow()
-      vm.signin = "https://www.espn.com"
+      $scope.signin = "#{config().webappUrl}/sign-in"
+      $scope.waitinglist = "#{config().webappUrl}/sign-up/waitinglist"
 
-      isActive = (route) ->
-        return true if route is $state.current.name
-
-      vm.isActive = isActive
-      return
+      # TODO definitely a better way to do this...
+      $timeout ->
+        $('.dropdown-toggle').dropdown()
+      , 1000
 
     directive =
       restrict: 'E'

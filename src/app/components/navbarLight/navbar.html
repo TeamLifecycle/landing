@@ -1,7 +1,7 @@
-<nav class="navbar top navbar-static-top">
+<nav class="navbar top clear">
   
   <div class="container">
-    <div class="navbar-header">
+    <!-- <div class="navbar-header">
       <a class="navbar-brand" href="/">
         <img src="/assets/images/logo/logo.white.png" class="header-logo">
       </a>
@@ -9,9 +9,38 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav navbar-right">
         <li><a class="white" href="https://app.lifecycle.io/sign-in">Sign in</a></li>
-        <!-- <li ng-class="{'active': vm.isActive('home')}"><a class="white" ng-href="/">Home</a></li> -->
-        <!-- <li ng-class="{'active': vm.isActive('about')}"><a class="white" ng-href="#/about">About</a></li> -->
-        <!-- <li ng-class="{'active': vm.isActive('contact')}"><a class="white" ng-href="#/contact">Contact</a></li> -->
+      </ul>
+    </div> -->
+    <div class="navbar-header col-md-2">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <!-- Project name -->
+        <img src="/assets/images/logo/logo.white.png" class="header-logo">
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav col-md-7">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/products/marketing">Marketing Automation</a></li>
+            <li><a href="#/products/support">Support</a></li>
+            <li><a href="#/products/chatbots">Chatbots</a></li>
+          </ul>
+        </li>
+        </li>
+        <li><a href="#/pricing">Pricing</a></li>
+        <li><a href="#/integrations">Integrations</a></li>
+        <li><a href="http://blog.lifecycle.io">Blog</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right col-md-3">
+        <li><a ng-href="{{signin}}">Signup</a></li>
+        <li><a ng-href="{{waitinglist}}">Login</a></li>
       </ul>
     </div>
   </div>
