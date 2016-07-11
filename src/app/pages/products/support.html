@@ -1,144 +1,78 @@
 <div>
-<!--   <div>
-    <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
-  </div> -->
-  <div class="landing">
+  <div class="page-support">
     <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- TODO this should be imported via angular, but YOLO -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <div class="hello">
       <div id="header">
-        <div class="inner" role="listbox">
-          <div class="item active hero-image pattern-bg">
-            <div>
-              <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
-            </div>
-            <div class="caption">
-              <div class="col-xs-12 col-md-10 col-md-offset-1 text-center call-to-action">
-                <h1 class="text-white supersize">
-                  Support
-                </h1>
-                <p class="col-md-12 text-center lead text-white">
-                  Lifecycle is a simple, all-in-one automated messaging tool, built for growth teams
-                </p>
-                <div class="header-signup-form clear-input-wrapper clearfix">
-                  <div class="col-xs-12 early-access">
-                    <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent early-access-btn no-box-shadow">Request a Beta Invite</a>
-                  </div>
-                </div>
-                <div class="col-xs-12 img-wrapper hidden-xs">
-                  <div id="header-carousel" class="carousel slide carousel-fade" data-pause="false" data-ride="carousel" data-interval="7000">
-                    <div class="carousel-inner" role="listbox">
-                      <div class="item">
-                        <!-- <object type="image/svg+xml" id="carousel-1" data="/assets/images/marketing/screen-ab.svg"></object> -->
-                        <img id="carousel-1" src="/assets/images/marketing/screen-ab.svg">
-                      </div>
-                      <div class="item active">
-                        <!-- <object type="image/svg+xml" id="carousel-2" data="/assets/images/marketing/screen-conversion.svg"></object> -->
-                        <img id="carousel-2" src="/assets/images/marketing/screen-conversion.png">
-                      </div>
-                      <div class="item">
-                        <!-- <object type="image/svg+xml" id="carousel-3" data="/assets/images/marketing/screen-integrations.png"></object> -->
-                        <img id="carousel-3" src="/assets/images/marketing/screen-integrations.png">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <div>
+          <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
+        </div>
+        <div class="col-md-6 text-left container">
+          <p class="col-md-12">
+            Support
+          </p>
+          <div class="header-signup-form clear-input-wrapper clearfix">
+            <div class="col-xs-12 early-access">
+              <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent early-access-btn no-box-shadow">Request a Beta Invite</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="news">
-      <div class="text-center p10">
-        <h4 class="inline">
-          <span class="label label-success type">Blog Post</span>
-        </h4>
-        <h4 class="p5 inline title">Venn is now Lifecycle</h4>
-        <a href="http://blog.lifecycle.io/venn-is-now-lifecycle/" class="h4 link hover-opacity">Read More</a>
+
+    <partners-logos></partners-logos>
+
+
+
+    <section class="marketing-sm clearfix text-center">
+      <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      <img src="http://placehold.it/550x250">
+    </section>
+
+
+
+    <section class="features marketing-sm clearfix">
+      <header class="text-center clearfix">
+        <h1>A completely new way to engage with your customers</h1>
+      </header>
+      <div class="col-xs-12 col-md-6 column-left">
+        <ul class="nav nav-pills nav-stacked descriptions col-md-offset-3 col-md-7" role="tablist">
+          <li role="presentation" class="active">
+            <a data-target="#tab-one-1" aria-controls="tab-one-1" role="tab" data-toggle="tab">
+               Have live conversations with your customers through their preferred channel.
+            </a>
+          </li>
+          <li role="presentation">
+            <a data-target="#tab-two-2" aria-controls="tab-two-2" role="tab" data-toggle="tab">
+              Create multi-channel, outbound campaigns in a few clicks.
+            </a>
+          </li>
+          <li role="presentation">
+            <a data-target="#tab-three-3" aria-controls="tab-three-3" role="tab" data-toggle="tab">
+              See a clear view into every customer and how they’re engaging with your business.
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-    <div class="benefits marketing">
-      <div class="container">
-        <div class="col-xs-12 header text-center">
-          <h1>Say adiós to expensive &amp; complicated automation tools.</h1>
-          <p>Test, Measure &amp; Optimize all of your lifecycle &amp; behavioral messaging <b>in one place</b>.</p>
+      <div class="tab-content col-xs-12 col-md-6 column-right no-padding">
+        <div role="tabpanel" class="tab-pane active" id="tab-one-1">
+        1
         </div>
-        <div class="col-xs-12">
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/abtest.svg"></object>
-            <h4 class="title">
-              A/B Testing
-            </h4>
-            <p>Test content &amp; delivery channels to measure the success of your messages.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/email.svg"></object>
-            <h4 class="title">
-              Email Messages
-            </h4>
-            <p>Re-engage users with automated and one-off emails.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/mobilepush.svg"></object>
-            <h4 class="title">
-              Mobile Push Notifications
-            </h4>
-            <p>Engage users after they've left your app with action oriented messages.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/webpush.svg"></object>
-            <h4 class="title">
-              Web Push Notifications
-            </h4>
-            <p>Bring users back into your app by sending push notifications in the browser.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/mobilemess.svg"></object>
-            <h4 class="title">
-              SMS Messages
-            </h4>
-            <p>Send transactional messages, updates &amp; deals straight to your users phone.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/triggered.svg"></object>
-            <h4 class="title">
-              Triggered Messages
-            </h4>
-            <p>Automate messages based on time and user behavior.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/metrics.svg"></object>
-            <h4 class="title">
-              Message Metrics
-            </h4>
-            <p>Create goals for your users and measure the effectiveness of each campaign.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/personalmess.svg"></object>
-            <h4 class="title">
-              Personalized Messages
-            </h4>
-            <p>User attributes to send personalized messages to every user.</p>
-          </div>
-          <div class="blurb col-xs-6 col-sm-4">
-            <object class="benefits-icon" type="image/svg+xml" data="/assets/images/features/icons/segmentation.svg"></object>
-            <h4 class="title">
-              User Segmentation
-            </h4>
-            <p>Target the right people to message with real-time user segmentation.</p>
-          </div>
+        <div role="tabpanel" class="tab-pane" id="tab-two-2">
+        2
+        </div>
+        <div role="tabpanel" class="tab-pane" id="tab-three-3">
+        3
         </div>
       </div>
-    </div>
-    <!-- <div class="go-to-tour">
-      <div class="text-center p10">
-        <h4 class="text inline">Learn what Lifecycle can do for your customer communication</h4>
-        <a href="/tour" class="btn btn-transparent">Take a tour <i class="zmdi zmdi-long-arrow-right"></i></a>
-      </div>
-    </div> -->
-    <div class="landing-featurettes marketing">
+    </section>
+
+
+    <section class="landing-featurettes marketing">
       <div class="container">
         <div class="featurette">
           <div class="col-xs-12 col-md-7 text-wrapper">
@@ -146,17 +80,22 @@
             <p class="lead">Spend less time, money and energy trying to acquire brand new users, and focus on activating the people who are already in your product instead. Lifecycle makes it faster and easier for growth teams to turn existing users into active customers.</p>
           </div>
           <div class="col-xs-12 col-md-5">
-            <object class="doodle" type="image/svg+xml" data="/assets/images/marketing/doodle-plane.svg"></object>
+            <img src="http://placehold.it/250x250">
           </div>
         </div>
-        <hr class="featurette-divider">
+      </div>
+    </section>
+
+
+    <div class="landing-featurettes marketing">
+      <div class="container">
         <div class="featurette">
           <div class="col-xs-12 col-md-7 col-md-push-5 text-wrapper">
             <h2 class="featurette-heading">Onboard new users with the right message at the right time.</h2>
             <p class="lead">Send triggered messages to your new users as they begin their journey with your web or mobile app. Use automated messaging to improve your products onboarding process by 1000%.</p>
           </div>
           <div class="col-xs-12 col-md-5 col-md-pull-7">
-            <object class="doodle" type="image/svg+xml" data="/assets/images/marketing/doodle-mountain.svg"></object>
+             <img src="http://placehold.it/250x250">
           </div>
         </div>
         <hr class="featurette-divider">
@@ -166,30 +105,61 @@
             <p class="lead">Use user event data to track when a user might be stuck or if they’re struggling to take the next step. Follow up with an optimized support message through the most optimized delivery channel.</p>
           </div>
           <div class="col-xs-12 col-md-5">
-            <object class="doodle" type="image/svg+xml" data="/assets/images/marketing/doodle-devices.svg"></object>
-          </div>
-        </div>
-        <hr class="featurette-divider">
-        <div class="featurette">
-          <div class="col-xs-12 col-md-7 col-md-push-5 text-wrapper">
-            <h2 class="featurette-heading">Retain more users with smarter cross-channel campaigns.</h2>
-            <p class="lead">Email works - we get it. Now combine that with web push, mobile push, and SMS and you’ve got a powerful engagement tool that allows you to communicate with users how and when they prefer.</p>
-          </div>
-          <div class="col-xs-12 col-md-5 col-md-pull-7">
-            <object class="doodle" type="image/svg+xml" data="/assets/images/marketing/doodle-web.svg"></object>
+             <img src="http://placehold.it/250x250">
           </div>
         </div>
       </div>
     </div>
-    <div class="marketing clearfix">
-      <div class="col-lg-8 col-lg-offset-2 text-center signup-again">
-        <h1 class="header text-center">Ready to start sending better messages?</h1>
-        <div class="btn-container">
-          <a href="/#/sign-up-beta" class="btn btn-lg btn-success early-access-btn no-box-shadow">Get Started</a>
-        </div>
-        <small>No Credit Card Required</small>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="marketing-sm clearfix text-center">
+      <h2>Earum eveniet odit suscipit reprehenderit</h2>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
       </div>
-    </div>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="http://placehold.it/250x250">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+      </div>
+    </section>
+
+
+    <section>
+      <pricing-widget></pricing-widget>
+    </section>
+
+
     <div>
       <footer-main></footer-main>
     </div>

@@ -1,22 +1,18 @@
 <div>
-<!--   <div>
-    <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
-  </div> -->
-  <div class="landing">
+  <div class="page-marketing">
     <!--[if lt IE 10]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <!-- TODO this should be imported via angular, but YOLO -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <div class="hello">
       <div id="header">
         <div>
           <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
         </div>
         <div class="col-md-6 text-left container">
-          <!-- <h1 class="supersize">
-            Marketing
-          </h1> -->
           <p class="col-md-12">
-            Lifecycle is a simple, all-in-one automated messaging tool, built for growth teams
+            Marketing
           </p>
           <div class="header-signup-form clear-input-wrapper clearfix">
             <div class="col-xs-12 early-access">
@@ -72,17 +68,17 @@
       <div class="col-xs-12 col-md-6 column-left">
         <ul class="nav nav-pills nav-stacked descriptions col-md-offset-3 col-md-7" role="tablist">
           <li role="presentation" class="active">
-            <a href="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">
+            <a data-target="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">
                Have live conversations with your customers through their preferred channel.
             </a>
           </li>
           <li role="presentation">
-            <a href="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">
+            <a data-target="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">
               Create multi-channel, outbound campaigns in a few clicks.
             </a>
           </li>
           <li role="presentation">
-            <a href="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">
+            <a data-target="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">
               See a clear view into every customer and how they’re engaging with your business.
             </a>
           </li>
@@ -117,7 +113,7 @@
             <p class="lead">Spend less time, money and energy trying to acquire brand new users, and focus on activating the people who are already in your product instead. Lifecycle makes it faster and easier for growth teams to turn existing users into active customers.</p>
           </div>
           <div class="col-xs-12 col-md-5">
-            <object class="doodle" type="image/svg+xml" data="/assets/images/marketing/doodle-plane.svg"></object>
+            <img src="http://placehold.it/250x250">
           </div>
         </div>
         <hr class="featurette-divider">
