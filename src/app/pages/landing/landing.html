@@ -1,52 +1,33 @@
 <div class="page-landing">
-  <div class="hello">
-    <div id="header">
-      <div class="inner" role="listbox">
-        <div class="item active hero-image pattern-bg">
-          <div>
-            <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
-          </div>
-          <div class="caption">
-            <div class="col-xs-12 col-md-10 col-md-offset-1 text-center call-to-action">
-              <div class="blurb">
-              <h1 class="supersize">
-                  <span class="text-white">Message with your customers. <strong>Everywhere.</strong></span>
-                </h1>
-                <p class="col-xs-12 col-lg-offset-2 col-lg-8 text-center lead text-white">
-                  Intelligently message your customers using automation and chatbots through SMS, FB Messenger, Telegram, Kik, Push, and Web &amp; Mobile Chat - all from one place.
-                </p>
-                <div class="header-signup-form clear-input-wrapper clearfix">
-                  <div class="col-xs-12 early-access">
-                    <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent btn-white early-access-btn no-box-shadow">Join the Waitlist</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  <navbar-top></navbar-top>
+  <section id="header" class="clear">
+    <div class="col-md-12 text-left container">
+      <p class="col-md-12">
+        Landing
+      </p>
+      <div class="header-signup-form clear-input-wrapper clearfix">
+        <div class="col-xs-12 early-access">
+          <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent early-access-btn no-box-shadow">Request a Beta Invite</a>
         </div>
       </div>
     </div>
-  </div>
-  <!-- <div class="news">
-    <div class="text-center p10">
-      <h4 class="inline">
-        <span class="label label-success type">Blog Post</span>
-      </h4>
-      <h4 class="p5 inline title">......</h4>
-      <a href="...." class="h4 link hover-opacity">Read More</a>
+    <div class="col-md-12">
+      <img src="http://placehold.it/550x250">
     </div>
-  </div> -->
+  </section>
+  
+  <section>
+    <partners-logos></partners-logos>
+  </section>
 
-  <partners-logos></partners-logos>
 
 
-
-  <section class="marketing-sm clearfix text-center">
+  <section class="clearfix text-center">
     <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
   </section>
 
-  <section class="marketing-sm clearfix text-center">
+  <section class="clearfix text-center">
     <div class="col-md-4">
       <img src="http://placehold.it/250x250">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
@@ -111,46 +92,21 @@
   </div>
 
 
-  <section class="features marketing-sm clearfix">
+  <section class="features clearfix">
     <header class="text-center clearfix">
       <h1>A completely new way to engage with your customers</h1>
     </header>
-    <div class="col-xs-12 col-md-6 column-left">
-      <ul class="nav nav-pills nav-stacked descriptions col-md-offset-3 col-md-7" role="tablist">
-        <li role="presentation" class="active">
-          <a data-target="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">
-             Have live conversations with your customers through their preferred channel.
-          </a>
-        </li>
-        <li role="presentation">
-          <a ng-click="active = 1">
-            Create multi-channel, outbound campaigns in a few clicks.
-          </a>
-        </li>
-        <li role="presentation">
-          <a data-target="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">
-            See a clear view into every customer and how they’re engaging with your business.
-          </a>
-        </li>
-      </ul>
-    </div>
-    <uib-tabset type="pills" class="tab-content col-xs-12 col-md-6 column-right no-padding">
-      <div role="tabpanel" class="tab-pane active" id="tab-one">
-      </div>
-      <uib-tab id="tab-two">
-      </uib-tab>
-      <div role="tabpanel" class="tab-pane" id="tab-three">
-      </div>
-    </uib-tabset>
+
+    <uib-tabset vertical="true" type="pills" class="clicky-tabs">
+       <uib-tab index="0" heading="Have live conversations with your customers through their preferred channel.">Vertical content 0</uib-tab>
+       <uib-tab index="1" heading="Create multi-channel, outbound campaigns in a few clicks.">1</uib-tab>
+       <uib-tab index="2" heading="See a clear view into every customer and how they’re engaging with your business.">2</uib-tab>
+     </uib-tabset>
   </section>
 
 
 
-  <uib-tabset vertical="true" type="pills" class="clicky-tabs">
-     <uib-tab index="0" heading="Have live conversations with your customers through their preferred channel.">Vertical content 0</uib-tab>
-     <uib-tab index="1" heading="Create multi-channel, outbound campaigns in a few clicks.">1</uib-tab>
-     <uib-tab index="2" heading="See a clear view into every customer and how they’re engaging with your business.">2</uib-tab>
-   </uib-tabset>
+
 
 
   <div>

@@ -1,46 +1,21 @@
 @import '../variables';
 @import '../mixins';
 
-nav.navbar {
-	img.header-logo {
-		height: 25px;
-		&.app-header {
-			margin-top: 8px;
-		}
-	}
+nav {
+	position: absolute;
 	.navbar-brand {
-		padding: 15px 0 0;
-		&.middle {
-			opacity: .9;
-		}
-		&:hover {
-			opacity: 1;
-		}
+		background-image: url(/assets/images/logo/logo.png);
+		width: 200px;
+		background-size: 130px;
+		background-repeat: no-repeat;
+		background-position-y: 8px;
 	}
-	.navbar-right.header-links {
-		&> li a {
-			margin-top: 15px;
-			font-weight: 500;
+	&.light {
+		a {
 			color: $white;
-
-			&:focus, &:hover {
-				background: transparent;
-				opacity: .7;
-			}
 		}
-	}
-
-	&.navbar-clear {
-		.navbar-nav {
-			&> li > a {
-				color: $brand-grey-dark;
-			}
-			button#profileDropdownMenu {
-				color:  $brand-grey-dark;
-				.name {
-					color:  $brand-grey-dark!important;
-				}
-			}
+		.navbar-brand {
+			background-image: url(/assets/images/logo/logo.white.png);
 		}
 	}
 }

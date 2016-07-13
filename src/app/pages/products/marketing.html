@@ -1,33 +1,30 @@
 <div class="page-marketing">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-  <div class="hello">
-    <div id="header">
-      <div>
-        <acme-navbar-light creation-date="landing.creationDate"></acme-navbar-light>
-      </div>
-      <div class="col-md-6 text-left container">
-        <p class="col-md-12">
-          Marketing
-        </p>
-        <div class="header-signup-form clear-input-wrapper clearfix">
-          <div class="col-xs-12 early-access">
-            <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent early-access-btn no-box-shadow">Request a Beta Invite</a>
-          </div>
+  <navbar-top></navbar-top>
+  <section id="header">
+    <div class="col-md-6 text-left container">
+      <p class="col-md-12">
+        Marketing
+      </p>
+      <div class="header-signup-form clear-input-wrapper clearfix">
+        <div class="col-xs-12 early-access">
+          <a href="/#/sign-up-beta" class="btn btn-lg btn-transparent early-access-btn no-box-shadow">Request a Beta Invite</a>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  
+  <section>
+    <partners-logos></partners-logos>
+  </section>
 
-  <partners-logos></partners-logos>
 
 
-
-  <section class="marketing-sm clearfix text-center">
+  <section class="clearfix text-center">
     <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
   </section>
 
-  <section class="marketing-sm clearfix text-center">
+  <section class="clearfix text-center">
     <div class="col-md-4">
       <img src="http://placehold.it/250x250">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
@@ -56,37 +53,17 @@
 
 
 
-  <section class="features marketing-sm clearfix">
+  <section class="features clearfix">
     <header class="text-center clearfix">
       <h1>A completely new way to engage with your customers</h1>
     </header>
-    <div class="col-xs-12 col-md-6 column-left">
-      <ul class="nav nav-pills nav-stacked descriptions col-md-offset-3 col-md-7" role="tablist">
-        <li role="presentation" class="active">
-          <a data-target="#tab-one" aria-controls="tab-one" role="tab" data-toggle="tab">
-             Have live conversations with your customers through their preferred channel.
-          </a>
-        </li>
-        <li role="presentation">
-          <a data-target="#tab-two" aria-controls="tab-two" role="tab" data-toggle="tab">
-            Create multi-channel, outbound campaigns in a few clicks.
-          </a>
-        </li>
-        <li role="presentation">
-          <a data-target="#tab-three" aria-controls="tab-three" role="tab" data-toggle="tab">
-            See a clear view into every customer and how they’re engaging with your business.
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="tab-content col-xs-12 col-md-6 column-right no-padding">
-      <div role="tabpanel" class="tab-pane active" id="tab-one">
-      </div>
-      <div role="tabpanel" class="tab-pane" id="tab-two">
-      </div>
-      <div role="tabpanel" class="tab-pane" id="tab-three">
-      </div>
-    </div>
+    <uib-tabset vertical="true" type="pills" class="clicky-tabs">
+       <uib-tab index="0" heading="Have live conversations with your customers through their preferred channel.">Vertical content 0</uib-tab>
+       <uib-tab index="1" heading="Create multi-channel, outbound campaigns in a few clicks.">1</uib-tab>
+       <uib-tab index="2" heading="See a clear view into every customer and how they’re engaging with your business.">2</uib-tab>
+     </uib-tabset>
+
+
   </section>
 
 
@@ -142,7 +119,7 @@
   
 
 
-  <section class="marketing-sm clearfix text-center">
+  <section class="clearfix text-center">
     <div class="col-md-4">
       <img src="http://placehold.it/250x250">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
