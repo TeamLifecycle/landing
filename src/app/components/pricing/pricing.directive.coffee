@@ -13,9 +13,14 @@ angular.module 'landing'
       #     min: 0
       #     max: 100
 
+      # $scope.options =
+      #   orientation: 'vertical'
+
       $scope.setA = ->
         console.log "setA"
         $scope.options =
+          orientation: 'vertical'
+          direction: 'rtl'
           start: 10
           range: 
             min: 0
@@ -24,6 +29,7 @@ angular.module 'landing'
 
       $scope.setB = ->
         $scope.options =
+          orientation: 'vertical'
           start: 10000
           range: 
             min: 0
