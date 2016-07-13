@@ -21,12 +21,6 @@ $brand-primary: #24c6db;
 
 $brand-text:            $brand-grey-dark;
 
-$brand-live:           $brand-success;
-$brand-draft:         $brand-aqua;
-$brand-paused:       $brand-dandelion;
-$brand-archived:       $brand-grey;
-
-
-// $navbar-default-brand-hover-color: pink;
-// $navbar-default-link-hover-color: green;
-// $navbar-default-brand-hover-bg: blue;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$font-family-base: "Open Sans", "Lato", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-size-base: 14px;

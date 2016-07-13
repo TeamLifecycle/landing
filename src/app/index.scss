@@ -2,9 +2,6 @@
  *  If you want to override some bootstrap variables, you have to change values here.
  *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
  */
-$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-base: "Lato", 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-size-base: 14px;
 
 @import './stylesheets/bootstrap.override';
 @import './stylesheets/imports';
