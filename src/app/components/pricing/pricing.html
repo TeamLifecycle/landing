@@ -2,9 +2,8 @@
   <div class="text-center">
     PRICING WIDGET
     <br>
-    <!-- <div slider ng-model="test.single" start=1 end=10></div> -->
-    <!-- <div slider ng-from="test.from" ng-to="test.to" start=0 end=100 step=5></div> -->
-    <div slider ng-model="test.single" start="1" end="10"></div>
-    <!-- <div slider ng-from="test.from" ng-to="test.to" start="0" end="100" step="5"></div> -->
+    <button ng-click="options.setRange(1, 4)" class="btn btn-sm btn-default">A</button>
+    <button ng-click="options.setRange(10234, 4023423)" class="btn btn-sm btn-default">B</button>
+    <div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
   </div>
 </section>
