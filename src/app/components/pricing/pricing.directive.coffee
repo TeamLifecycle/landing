@@ -3,37 +3,23 @@ angular.module 'landing'
 
     PartnersController = ($scope) ->
       'ngInject'
-      # vm = this
 
-      # $scope.single =
-      #   start: 5
-      # $scope.options =
-      #   start: 20
-      #   range: 
-      #     min: 0
-      #     max: 100
+      $scope.options =
+        orientation: 'vertical'
+        direction: 'rtl'
 
-      # $scope.options =
-      #   orientation: 'vertical'
-
-      $scope.setA = ->
-        console.log "setA"
-        $scope.options =
-          orientation: 'vertical'
-          direction: 'rtl'
-          start: 10
-          range: 
+      $scope.setMarketingAutomation = ->
+        $scope.options.start = 10
+        $scope.options.range =
             min: 0
             max: 14
 
 
-      $scope.setB = ->
-        $scope.options =
-          orientation: 'vertical'
-          start: 10000
-          range: 
-            min: 0
-            max: 32443     
+      $scope.setSupport = ->
+        $scope.options.start = 13240
+        $scope.options.range =
+            min: 2340
+            max: 23322   
 
       $scope.eventHandlers =
         update: (values, handle, unencoded) ->
@@ -47,7 +33,7 @@ angular.module 'landing'
         #   console.log "change", values, handle, unencoded
 
 
-      $scope.setA()
+      $scope.setMarketingAutomation()
         
     directive =
       restrict: 'E'
