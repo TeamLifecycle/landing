@@ -1,47 +1,47 @@
-@import 'variables';
+// @import 'variables';
 
-.landing-featurettes {
-	background: $brand-grey-light;
-	.featurette-divider {
-		border-color: #e4e4e4;
-	}
-	.featurette {
-		height: 300px;
-		// &>div, object.doodle {
-		// 	height: inherit;
-		// }
-		.doodle {
-		    width: 100%;
-		}
-		.lead {
-			margin-top: 30px;
-			line-height: 30px;
-			font-size: 18px;
-		}
-		.text-wrapper {
-			padding-top: 30px;
-		}
-	}
-}
+// .landing-featurettes {
+// 	background: $brand-grey-light;
+// 	.featurette-divider {
+// 		border-color: #e4e4e4;
+// 	}
+// 	.featurette {
+// 		height: 300px;
+// 		// &>div, object.doodle {
+// 		// 	height: inherit;
+// 		// }
+// 		.doodle {
+// 		    width: 100%;
+// 		}
+// 		.lead {
+// 			margin-top: 30px;
+// 			line-height: 30px;
+// 			font-size: 18px;
+// 		}
+// 		.text-wrapper {
+// 			padding-top: 30px;
+// 		}
+// 	}
+// }
 
-@include MQ(XS) {
-	.landing-featurettes {
-		.featurette {
-			.doodle {
-				width: inherit;
-			}
-		}
+// @include MQ(XS) {
+// 	.landing-featurettes {
+// 		.featurette {
+// 			.doodle {
+// 				width: inherit;
+// 			}
+// 		}
 
-	}
-}
+// 	}
+// }
 
-@include MQ(Splus) {
-	.landing-featurettes {
-		.featurette {
-			&>div, .doodle {
-				height: inherit;
-			}
-		}
+// @include MQ(Splus) {
+// 	.landing-featurettes {
+// 		.featurette {
+// 			&>div, .doodle {
+// 				height: inherit;
+// 			}
+// 		}
 
-	}
-}
+// 	}
+// }

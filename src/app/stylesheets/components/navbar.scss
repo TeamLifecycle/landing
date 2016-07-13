@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import '../variables';
+@import '../mixins';
 
 nav.navbar {
 	img.header-logo {
@@ -43,17 +43,4 @@ nav.navbar {
 			}
 		}
 	}
-}
-
-@include MQ(Mneg) {
-    nav.navbar {
-    	.navbar-brand {
-    		float: none!important;
-    		margin: 10px auto;
-    		img.header-logo {
-				margin: 0 auto;
-				margin-top: 10px;
-    		}
-    	}
-    }
 }
