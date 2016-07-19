@@ -1,7 +1,80 @@
-<footer class="footer col-xs-12">
+<!-- <script type="text/javascript" src=".   /getBlogData.js"></script>
+ -->
+
+ <footer class="footer col-xs-12">
+
+
+<!--     <script> window.fbAsyncInit = function() {FB.init({appId: '1384215304936564', xfbml: true, version: 'v2.6'}); }; (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk')); </script> 
+
+<script>window.onload = function() {var SMS_NUMBER = "+15139879241";var SMS_NUMBER_PRETTY = "(513) 987-9241";var tag = document.getElementById('lifecycle-sms'); if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {tag.innerHTML = '<a href="sms://' + SMS_NUMBER + '"style="color:#fff;"><img src="https://s3-us-west-2.amazonaws.com/lifecycle-cdn/textus/sms.png" style="height: 13px;margin-right: 3px;">&nbsp;Text Us</a>'; } }</script>
+
+      <div class="text-center mobile-show">
+        <div class="fb-messengermessageus" 
+            messenger_app_id="1384215304936564" 
+            page_id="703981143067573"
+            color="blue"
+            size="standard" >
+        </div>
+        <div class="text-center">
+          <div id="lifecycle-sms" style="display:inline-block;background-color: #58c6d0;color:#fff;padding: 5px 10px;border-radius: 3px;font-size: 13px;margin: 10px 0;"></div>
+        </div>
+      </div> -->
     <div class="container">
         <div class="text-center">
             <img src="/assets/images/logo/logo.white.png" class="logo">
         </div>
+        <a ng-href="{{testy}}">Login</a>
+        <p style="color:white;"> test </p>
+
+        <ul id = "menu">
+            <li ng-repeat="post in posts">
+                <!-- <p style="color:white;"> test2 </p> -->
+                <a ng-href="http://www.blog.lifecycle.io{{post.url}}" style="color:white;"> {{ post.title }} </a>
+            <li>
+        </ul>
+        <!-- company logo -->
+        <!-- <div class="col-sm-3 hidden-xs text-center">
+            <div>
+              <img src="/assets/images/logo/logo.sm.green.white.png" class="logo">
+            </div>
+            <div>
+              <img src="/assets/images/ph_pdhmy.png" class="hunt">
+            </div>
+        </div> -->
+        <!-- product -->
+        <!-- <div class="col-xs-4"> -->
+            <!-- <span class="title">Product</span> -->
+            <!-- <ul class="site-footer-links list-unstyled"> -->
+                <!-- <li><a href="{{pathFor 'plans.landing'}}">Pricing</a></li> -->
+                <!-- <li><a href="{{pathFor 'tour'}}">Tour</a></li> -->
+                <!-- <li><a href="{{pathFor 'docs.campaign'}}">Docs</a></li> -->
+                <!-- <li><a href="">Integrations</a></li> -->
+            <!-- </ul> -->
+        <!-- </div> -->
+        <!-- company -->
+        <!-- <div class="col-xs-3">
+            <span class="title">Company</span>
+            <ul class="site-footer-links list-unstyled">
+                <li><a href="#/products/marketing">Marketing</a></li>
+                <li><a href="#/products/support">Support</a></li>
+                <li><a href="#/pricing">Pricing</a></li>
+                <li><a href="#/integrations">Integrations</a></li>
+                <li><a href="https://angel.co/lifecycle/jobs">Careers</a></li>
+                <li><a href="http://blog.lifecycle.io">Blog</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3">
+            <span class="title">Connect</span>
+            <ul class="site-footer-links list-unstyled">
+                <li><a href="https://twitter.com/lifecycleio">Twitter</a></li>
+                <li><a href="https://www.facebook.com/lifecycleIO">Facebook</a></li>
+                <li><a href="https://github.com/TeamLifecycle">Github</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3 text-center brandery">
+            <img src="/assets/images/friends/logos/brandery-color.png" class="brandery">
+            <p class="text-center">A Brandery Company</p>
+        </div> -->
+
     </div>
 </footer>
