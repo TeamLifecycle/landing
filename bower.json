@@ -20,7 +20,6 @@
     "angular": "~1.4.2",
     "parse": "~1.6.13",
     "slack-notifier": "~0.0.3",
-    "angular-nouislider": "^0.3.1",
     "nouislider-angular": "^2.6.1"
   },
   "devDependencies": {
