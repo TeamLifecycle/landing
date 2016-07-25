@@ -1,5 +1,7 @@
 @import 'mixins';
 // @import url(https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,900);
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,800";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 
 // // ---------------------------------------- \\
 // // Global Styles                            \\
@@ -22,3 +24,27 @@ section {
 	}
 }
 
+
+// // ---------------------------------------- \\
+// // Helpers                                  \\
+// // ---------------------------------------- \\
+.text-white {
+	color: #fff;
+}
+
+.btn-rounded {
+	border-radius: 29px;
+}
+
+.btn-lg {
+    letter-spacing: 1.5px;
+    padding: 12px 30px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.font-secondary {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

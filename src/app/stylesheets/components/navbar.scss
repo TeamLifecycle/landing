@@ -4,18 +4,23 @@
 nav {
 	position: absolute;
 	.navbar-brand {
-		background-image: url(/assets/images/logo/logo.png);
+		background-image: url(/assets/img/logo/logo.png);
 		width: 200px;
 		background-size: 130px;
 		background-repeat: no-repeat;
 		background-position-y: 8px;
+	}
+	.navbar-nav {
+		li {
+			text-transform: uppercase;
+		}
 	}
 	&.light {
 		a {
 			color: $white;
 		}
 		.navbar-brand {
-			background-image: url(/assets/images/logo/logo.white.png);
+			background-image: url(/assets/img/logo/logo.white.png);
 		}
 	}
 }

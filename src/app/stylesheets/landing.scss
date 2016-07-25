@@ -2,4 +2,42 @@
 @import 'mixins';
 
 .page-landing {
+	background-image: url(/assets/img/landing/landing-header.png);
+	background-repeat: no-repeat;
+	// width: 200px;
+	// background-size: 130px;
+	// background-position-y: 8px;
+	section#header {
+		.subtext {
+			line-height: 27px;
+		}
+		.dudes {
+			height: 780px;
+			img {
+				position: absolute;
+				&.dude-1 {
+					left: 3%;
+					top: 0%;
+				}
+				&.dude-2 {
+					left: 25%;
+					bottom: 50%;
+				}
+				&.dude-3 {
+					// left: 45%;
+					left: calc(50% - 35.5px);
+					top: 10%;
+				}
+				&.dude-4 {
+					right: 24%;
+					bottom: 36%;
+				}
+				&.dude-5 {
+					right: 3%;
+					top: -1%;
+				}
+			}
+		}
+	}
+
 }

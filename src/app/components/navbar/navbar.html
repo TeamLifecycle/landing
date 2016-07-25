@@ -1,5 +1,5 @@
 <nav class="navbar navbar-static-top {{shadeClass}}">  
-  <div class="container">
+  <div class="container-fluid">
     <div class="navbar-header col-md-2">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
         <span class="sr-only">Toggle navigation</span>
@@ -8,10 +8,10 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#">
-        <!-- <img src="/assets/images/logo/logo.white.png" class="header-logo"> -->
+        <!-- <img src="/assets/img/logo/logo.white.png" class="header-logo"> -->
       </a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
+  <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav col-md-7">
         <li uib-dropdown>
           <a href="#" uib-dropdown-toggle>Products <span class="caret"></span></a>
@@ -27,8 +27,8 @@
         <li><a href="http://blog.lifecycle.io">Blog</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right col-md-3">
-        <li><a ng-href="{{signin}}">Signup</a></li>
-        <li><a ng-href="{{waitinglist}}">Login</a></li>
+        <li class="pull-right"><a ng-href="{{signin}}">Signup</a></li>
+        <li class="pull-right"><a ng-href="{{waitinglist}}">Login</a></li>
       </ul>
     </div>
   </div>
