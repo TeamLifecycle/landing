@@ -6,6 +6,9 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 $font-family-base: "Open Sans", 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-size-base: 14px;
 
+$navbar-default-link-hover-color: blue;
+$navbar-default-brand-hover-bg: purple;
+
 @import './stylesheets/bootstrap.override';
 @import './stylesheets/imports';
 
