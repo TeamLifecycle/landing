@@ -3,6 +3,7 @@
 
 nav {
 	position: absolute;
+	background: $white;
 	.navbar-brand {
 		background-image: url(/assets/img/logo/logo.dark.png);
 		width: 200px;
@@ -22,7 +23,8 @@ nav {
 			}
 		}
 	}
-	&.light {
+	&.clear:not(.scrolled) {
+		background: transparent;
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);
 		}

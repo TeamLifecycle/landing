@@ -12,10 +12,8 @@ angular.module 'landing'
       $.get('https://teamlifecycle.ghost.io/ghost/api/v0.1/posts/?limit=3&client_id=ghost-frontend&client_secret=99b3a38f41d8').done((data) ->
         $scope.posts = data.posts
         $scope.$apply()
-        return
       ).fail (err) ->
         console.error err
-        return
 
 
 

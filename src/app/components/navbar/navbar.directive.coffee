@@ -1,14 +1,16 @@
 angular.module 'landing'
   .directive 'navbarTop', ->
 
-    NavbarController = (config, $scope) ->
+    NavbarController = (config, $scope, $document, $window) ->
       'ngInject'
       vm = this
-      # vm.tabClass = "harry"
       $scope.signin = "#{config().webappUrl}/sign-in"
       $scope.waitinglist = "#{config().webappUrl}/sign-up/waitinglist"
-      # $scope.light = btnService.isCollapsedUpload
       $scope.shadeClass = vm.shadeClass
+
+      $document.bind 'scroll', ->
+        checkScroll $window, $scope
+
 
     directive =
       restrict: 'E'
@@ -17,3 +19,12 @@ angular.module 'landing'
       controller: NavbarController
       controllerAs: 'vm'
       bindToController: true
+
+checkScroll = ($window, $scope) ->
+  if $window.scrollY > 100
+    # remove light shadeclass if scrolled
+    $scope.scrolledClass = "scrolled"
+    $scope.$apply()
+  else
+    $scope.scrolledClass = ""
+    $scope.$apply()
