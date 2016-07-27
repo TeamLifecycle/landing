@@ -9,7 +9,7 @@ footer.footer {
 	padding: 30px 0 0;
 	background-repeat: no-repeat;
 	background-position: center top;
-	height: calc(#{$oneHeight} + #{$twoHeight});
+	height: calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 	background-size: auto calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 	.cta {
 		height: $oneHeight;
@@ -45,7 +45,7 @@ footer.footer {
 	$twoHeight: 368px;
 	$threeHeight: 70px;
 	footer.footer {
-		height: calc(#{$oneHeight} + #{$twoHeight});
+		height: calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 		background-size: auto calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 		.cta {
 			height: $oneHeight;
@@ -67,11 +67,11 @@ footer.footer {
 	$twoHeight: 400px;
 	$threeHeight: 70px;
 	footer.footer {
-		height: calc(#{$oneHeight} + #{$twoHeight});
+		height: calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 		background-size: auto calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
 		.cta {
 			height: $oneHeight;
-			padding-top: 290px;
+			padding-top: 200px;
 		}
 		.nav {
 			height: $twoHeight;
