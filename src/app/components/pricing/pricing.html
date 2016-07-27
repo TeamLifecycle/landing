@@ -7,15 +7,23 @@
     </header>
     <div class="wrapper">
 	    <div class="left">
-	    	<h4 class="text-center thing">Slide to your team size to see pricing</h4>
+	    	<h4 class="text-center thin">Slide to your team size to see pricing</h4>
 	    	<div class="col-xs-3">
 	    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
 	    	</div>
-	    	<div class="col-xs-9">
-	    		<p>Your Plan:</p>
+	    	<div class="col-xs-9 text-left">
+	    		<h2 class="thin header">
+	    			<span ng-bind="currentValue/1"></span> People
+	    		</h2>
 
 	    		<p>
-	    			You have <span ng-bind="currentValue/1"></span> users and your plan will cost $<span ng-bind="(((Math.floor(currentValue/10000) * 10000)/1000)*2) + 20"></span> per month
+	    			Your plan:
+	    		</p>
+	    		<p>
+	    			Studio plan for $<span ng-bind="(((Math.floor(currentValue/10000) * 10000)/1000)*2) + 20"></span>/mo
+	    		</p>
+	    		<p>
+	    			Up to <span ng-bind="currentValue/1"></span> People
 	    		</p>
 	    		
 	    	</div>
