@@ -12,10 +12,12 @@
 	    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
 	    	</div>
 	    	<div class="col-xs-9">
-	    		Your Plan:
+	    		<p>Your Plan:</p>
+
 	    		<p>
-	    			Studio Plan for $<span ng-bind="currentValue"></span> per month
+	    			You have <span ng-bind="currentValue/1"></span> users and your plan will cost $<span ng-bind="(((Math.floor(currentValue/10000) * 10000)/1000)*2) + 20"></span> per month
 	    		</p>
+	    		
 	    	</div>
 	    </div>
 	    <div class="right">
