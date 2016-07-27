@@ -25,6 +25,11 @@ angular.module 'landing'
         ctaText: '@'
         ctaButtonText: '@'
         img: '@'
+      compile: (element, attrs) ->
+        console.log element, attrs
+        if !attrs.ctaText then attrs.ctaText = "Ready to Start Messaging with Your Customers?" 
+        if !attrs.ctaButtonText then attrs.ctaButtonText = "Request Invite" 
+        if !attrs.img then attrs.img = "/assets/img/landing/footer_bg.png"
       controller: FooterController
       controllerAs: 'vm'
       bindToController: true
