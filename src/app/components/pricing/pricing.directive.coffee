@@ -33,7 +33,8 @@ angular.module 'landing'
       $scope.eventHandlers =
         update: (values, handle, unencoded) ->
           console.log "update", values, handle, unencoded
-          $scope.currentValue = values[0]
+          $scope.currentValue = String(values[0]/1).replace /\B(?=(\d{3})+(?!\d))/g, ','
+          $scope.price = String((((Math.floor(values[0]/10000) * 10000)/1000)*2) + 20).replace /\B(?=(\d{3})+(?!\d))/g, ','
         # slide: (values, handle, unencoded) ->
         #   console.log "slide", values, handle, unencoded
         # set: (values, handle, unencoded) ->
