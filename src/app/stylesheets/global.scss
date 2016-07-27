@@ -45,6 +45,18 @@ section {
 	}
 }
 
+.cards {
+	.item {
+		height: 380px;
+		img {
+			width: 150px;
+		}
+		.title {
+			margin-top: 20px;
+		}
+	}
+}
+
 
 // // ---------------------------------------- \\
 // // Helpers                                  \\
