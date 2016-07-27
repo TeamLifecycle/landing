@@ -53,6 +53,10 @@ section {
 	color: $white;
 }
 
+.center {
+	margin: 0 auto;
+}
+
 .btn-rounded {
 	border-radius: 29px;
 }
@@ -83,4 +87,9 @@ section {
 
 .font-secondary {
 	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
 }

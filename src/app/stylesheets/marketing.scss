@@ -34,4 +34,36 @@
 			}
 		}
 	}
+	section#marketing-2 {
+		.item {
+			height: 380px;
+			img {
+				width: 150px;
+			}
+			.title {
+				margin-top: 20px;
+			}
+		}
+	}
+	section#marketing-5 {
+		background-image: url(/assets/img/marketing/phone_bg.png);
+		background-repeat: no-repeat;
+		height: 1000px;
+		background-size: auto 1000px;
+		background-position: center top;
+		.title {
+			padding-top: 130px;
+		}
+	}
+	section#marketing-44 {
+		.item {
+			height: 380px;
+			img {
+				width: 150px;
+			}
+			.title {
+				margin-top: 20px;
+			}
+		}
+	}
 }

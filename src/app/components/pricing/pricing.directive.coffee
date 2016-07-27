@@ -9,13 +9,15 @@ angular.module 'landing'
         direction: 'rtl'
 
       $scope.setMarketingAutomation = ->
+        $scope.type = "marketing"
         $scope.options.start = 10
         $scope.options.range =
             min: 0
             max: 14
-
+        console.log $scope
 
       $scope.setSupport = ->
+        $scope.type = "support"
         $scope.options.start = 13240
         $scope.options.range =
             min: 2340
@@ -38,7 +40,4 @@ angular.module 'landing'
     directive =
       restrict: 'E'
       templateUrl: 'app/components/pricing/pricing.html'
-      # scope: creationDate: '='
       controller: PartnersController
-      # controllerAs: 'vm'
-      # bindToController: true

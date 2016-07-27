@@ -21,7 +21,7 @@ angular.module 'landing'
       bindToController: true
 
 checkScroll = ($window, $scope) ->
-  if $window.scrollY > 100
+  if $window.scrollY > 10
     # remove light shadeclass if scrolled
     $scope.scrolledClass = "scrolled"
     $scope.$apply()

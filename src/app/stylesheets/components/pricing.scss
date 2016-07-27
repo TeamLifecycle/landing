@@ -2,7 +2,34 @@
 @import '../mixins';
 
 .pricing-widget {
+	width: 800px;
 	.noUi-target {
-	    height: 450px;
+	    height: 250px;
+	}
+	.wrapper {
+		width: inherit;
+		height: 400px;
+		.left {
+			width: 400px;
+			float: left;
+			height: 400px;
+			background: #5A87F9;
+			color: $white;
+			padding: 30px;
+		}
+		.right {
+			width: 400px;
+			float: left;
+			height: 400px;
+			background-image: url(/assets/img/pricing/herb.png);
+			background-repeat: no-repeat;
+			background-size: 460px;
+		}
+		.bottom {
+			position: absolute;
+			width: inherit;
+			bottom: 0;
+			height: 50px;
+		}
 	}
 }
