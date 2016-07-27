@@ -20,4 +20,3 @@ angular.module 'landing'
 
     console.log "config", config
     $rootScope.config = config
-    $rootScope.bob = "jim"
