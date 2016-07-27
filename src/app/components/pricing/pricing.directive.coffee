@@ -13,18 +13,18 @@ angular.module 'landing'
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
         $scope.options.start = 0
-        $scope.options.step = 1
+        $scope.options.step = 10000
         $scope.options.range =
             min: 0
             max: 200000
-        console.log $scope
-
+            
       $scope.setSupport = ->
-        $scope.type = "support"
+        $scope.type = "marketing"
         $scope.options.start = 0
+        $scope.options.step = 10000
         $scope.options.range =
-            min: 2340
-            max: 23322   
+            min: 0
+            max: 200000
 
       $scope.eventHandlers =
         update: (values, handle, unencoded) ->
