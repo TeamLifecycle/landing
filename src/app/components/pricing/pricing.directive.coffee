@@ -1,7 +1,7 @@
 angular.module 'landing'
   .directive 'pricingWidget', ->
 
-    PartnersController = ($scope) ->
+    PartnersController = ($scope, $rootScope) ->
       'ngInject'
 
       $scope.options =
@@ -12,6 +12,8 @@ angular.module 'landing'
 
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
+        $rootScope.pricingType = "marketing"
+        # $rootScope.$apply()
         $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
@@ -19,8 +21,10 @@ angular.module 'landing'
             max: 200000
             
       $scope.setSupport = ->
-        $scope.type = "marketing"
-        $scope.options.start = 0
+        $scope.type = "support"
+        $rootScope.pricingType = "support"
+        # $rootScope.$apply()
+        $scope.options.start = 5000
         $scope.options.step = 10000
         $scope.options.range =
             min: 0
