@@ -3,9 +3,8 @@
 
 nav {
 	position: absolute;
-	background: $white;
+	background: transparent;
 	.navbar-brand {
-		background-image: url(/assets/img/logo/logo.dark.png);
 		width: 200px;
 		background-size: 130px;
 		background-repeat: no-repeat;
@@ -14,17 +13,27 @@ nav {
 	.navbar-nav {
 		&> li {
 			text-transform: uppercase;
-			&> a {
-				background: inherit!important;
-				&:hover {
+		}
+	}
+
+	&.dark, &.scrolled {
+		.navbar-brand {
+			background-image: url(/assets/img/logo/logo.dark.png);
+		}
+		.navbar-nav {
+			&> li {
+				&> a {
 					background: inherit!important;
-					color: inherit!important;
+					&:hover {
+						background: inherit!important;
+						color: inherit!important;
+					}
 				}
 			}
 		}
 	}
-	&.clear:not(.scrolled) {
-		background: transparent;
+
+	&.white:not(.scrolled) {
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);
 		}
@@ -41,5 +50,8 @@ nav {
 				}
 			}
 		}
+	}
+	&.scrolled {
+		background: white;
 	}
 }
