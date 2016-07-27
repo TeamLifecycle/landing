@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'mixins';
+
+.page-chatbots {
+	background-image: url(/assets/img/chatbots/header_illustration.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 110px;
+	background-size: 500px;
+	section#header {
+		height: 800px;
+	}
+	section#marketing-93 {
+		background-image: url(/assets/img/marketing/phone_bg.png);
+		background-repeat: no-repeat;
+		height: 1000px;
+		background-size: auto 1000px;
+		background-position: center top;
+		.title {
+			padding-top: 130px;
+		}
+	}
+}

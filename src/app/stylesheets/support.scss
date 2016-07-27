@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'mixins';
+
+.page-support {
+	background-image: url(/assets/img/support/gurita_illustration.png);
+	background-repeat: no-repeat;
+	background-position-x: right;
+	background-position-y: 110px;
+	background-size: 500px;
+	section#header {
+		height: 800px;
+	}
+	#featurettes-23 {
+		.featurette {
+			padding: 100px 0;
+		}
+		.special-bg {
+			padding-top: 200px;
+			background-image: url(/assets/img/support/hand_bg.png);
+			background-repeat: no-repeat;
+			background-position: top center;
+			background-size: 1500px;
+			height: 1060px;
+			img {
+
+			}
+		}
+	}
+}

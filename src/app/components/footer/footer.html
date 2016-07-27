@@ -1,7 +1,60 @@
-<footer class="footer col-xs-12">
-    <div class="container">
-        <div class="text-center">
-            <img src="/assets/images/logo/logo.white.png" class="logo">
+<footer class="footer col-xs-12" style="background-image: url({{img}});">
+    <section class="cta text-center">
+        <h2 class="blurb text-white">{{ctaText}}</h2>
+        <a href="/#/sign-up-beta" class="btn btn-lg btn-info btn-rounded">{{ctaButtonText}}</a>
+    </section>
+
+    <div class="nav container text-white">
+        <!-- company ingo -->
+        <div class="col-xs-3">
+            <div class="title">
+              <img src="/assets/img/logo/logo.light.png" class="logo">
+            </div>
+            <ul class="site-footer-links list-unstyled">
+                <li><a href="#/pricing">Privacy Policy</a></li>
+                <li><a href="#/pricing">Terms of Service</a></li>
+                <li><a href="#/pricing">Schedule a Demo</a></li>
+                <li><a href="#/pricing">FAQ</a></li>
+                <li><a href="#/pricing">Customer Support</a></li>
+            </ul>
+        </div>
+        <!-- product -->
+        <div class="col-xs-3">
+            <div class="title">Product</div>
+            <ul class="site-footer-links list-unstyled">
+                <li><a href="#/pricing">Conversations</a></li>
+                <li><a href="#/pricing">Campaigns</a></li>
+                <li><a href="#/pricing">Chatbots</a></li>
+                <li><a href="#/pricing">Integrations</a></li>
+                <li><a href="#/pricing">Pricing</a></li>
+                <li><a href="#/pricing">Documentation</a></li>
+            </ul>
+        </div>
+        <!-- company -->
+        <div class="col-xs-3">
+            <div class="title">Company</div>
+            <ul class="site-footer-links list-unstyled">
+                <li><a href="https://angel.co/lifecycle/jobs">Careers</a></li>
+                <li><a href="#/pricing">Contact</a></li>
+                <li><a href="http://blog.lifecycle.io">Blog</a></li>
+                <li><a href="">Investors</a></li>
+            </ul>
+        </div>
+        <!-- blog -->
+        <div class="col-xs-3" ng-show="posts">
+            <div class="title">Hot off the Press</div>
+            <ul id="menu" class="site-footer-links list-unstyled">
+                <li ng-repeat="post in posts">
+                    <a ng-href="http://blog.lifecycle.io{{post.url}}" target="_blank">{{post.title}}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="made-in text-white">
+        <div class="container">
+            <span>
+                Made with ❤&nbsp;️in Cincinnati, Chicago, &amp; San Francisco
+            </span>
         </div>
     </div>
 </footer>

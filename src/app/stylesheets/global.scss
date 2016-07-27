@@ -1,19 +1,19 @@
 @import 'mixins';
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,900);
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700,800";
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 
 // // ---------------------------------------- \\
 // // Global Styles                            \\
 // // ---------------------------------------- \\
 section {
 	@include clearfix();
-	&:first-of-type {
-		margin-top: -71px;
-		padding-top: 90px;
-	}
+	// &:first-of-type {
+		
+	// }
 }
-
-a {
-	background-color:transparent !important;
+section#header {
+	margin-top: -71px;
+	padding-top: 140px;
 }
 
 // // ---------------------------------------- \\
@@ -23,6 +23,101 @@ a {
 	ul.nav {
 		width: 50%;
 		float: left;
+		border-bottom: none!important;
+	}
+	.content {
+		width: 50%;
+		float: left;
+	}
+	li {
+		a {
+			border-left: 2px solid transparent!important;
+			&:hover {
+				background: inherit!important;
+				border-color: transparent!important;
+				color: inherit!important;
+			}
+		}
+		&.active {
+			a {
+				border-radius: 0!important;
+				border-color: transparent!important;
+				border-left-color: $brand-pink!important;
+			}
+		}
 	}
 }
+
+.cards {
+	.item {
+		height: 380px;
+		img {
+			width: 150px;
+		}
+		.title {
+			margin-top: 20px;
+		}
+	}
+}
+
+
+// // ---------------------------------------- \\
+// // Helpers                                  \\
+// // ---------------------------------------- \\
+.text-white {
+	color: $white;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+.btn-rounded {
+	border-radius: 29px;
+}
+
+.btn-outline {
+	&.btn-info {
+		border-color: $brand-info;
+		background: $white;
+		color: $brand-info;
+	}
+	&:hover {
+		opacity: .7;
+	}
+}
+
+.btn-lg {
+    letter-spacing: 1.5px;
+    padding: 12px 30px;
+}
+
+.brand-grey {
+	color: $brand-grey;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.thin {
+	font-weight: 300;
+}
+
+.font-secondary {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+
+
+
 

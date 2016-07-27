@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'mixins';
+
+.page-marketing {
+	background-image: url(/assets/img/landing/landing-header.png);
+	background-repeat: no-repeat;
+	section#header {
+		height: 1100px;
+		img {
+			position: absolute;
+			&.parachute-1 {
+				right: 40%;
+				bottom: 70%;
+				width: 100px;
+			}
+			&.parachute-2 {
+				width: 160px;
+				bottom: 50%;
+			}
+			&.parachute-3 {
+				right: 10%;
+				bottom: 0%;
+				width: 400px;
+			}
+			&.earth {
+				left: 24%;
+				bottom: -10%;
+				width: 350px;
+			}
+			&.spaceship {
+				width: 350px;
+				right: 3%;
+				top: -1%;
+			}
+		}
+	}
+	section#marketing-2 {
+		// .item {
+		// 	height: 380px;
+		// 	img {
+		// 		width: 150px;
+		// 	}
+		// 	.title {
+		// 		margin-top: 20px;
+		// 	}
+		// }
+	}
+	section#marketing-5 {
+		background-image: url(/assets/img/marketing/phone_bg.png);
+		background-repeat: no-repeat;
+		height: 1000px;
+		background-size: auto 1000px;
+		background-position: center top;
+		.title {
+			padding-top: 130px;
+		}
+	}
+	section#marketing-44 {
+		// .item {
+		// 	height: 380px;
+		// 	img {
+		// 		width: 150px;
+		// 	}
+		// 	.title {
+		// 		margin-top: 20px;
+		// 	}
+		// }
+	}
+}

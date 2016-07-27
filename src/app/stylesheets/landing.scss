@@ -2,4 +2,57 @@
 @import 'mixins';
 
 .page-landing {
+	background-image: url(/assets/img/landing/landing-header.png);
+	background-repeat: no-repeat;
+	section#header {
+		.subtext {
+			line-height: 27px;
+		}
+		.dudes {
+			height: 780px;
+			img {
+				position: absolute;
+				&.dude-1 {
+					left: 3%;
+					top: 0%;
+				}
+				&.dude-2 {
+					left: 25%;
+					bottom: 50%;
+				}
+				&.dude-3 {
+					// left: 45%;
+					left: calc(50% - 35.5px);
+					top: 10%;
+				}
+				&.dude-4 {
+					right: 24%;
+					bottom: 36%;
+				}
+				&.dude-5 {
+					right: 3%;
+					top: -1%;
+				}
+			}
+		}
+	}
+	section#marketing-1 {
+
+	}
+	section#marketing-2 {
+		img {
+			width: 170px;
+		}
+	}
+	section#features-1 {
+
+	}
+	section#featurettes-1 {
+		// img {
+			// &:nth-of-type(1) { width: 738px; }
+			// &:nth-of-type(2) { width: 738px; }
+			// &:nth-of-type(3) { width: 497px; }
+		// }
+	}
+
 }
