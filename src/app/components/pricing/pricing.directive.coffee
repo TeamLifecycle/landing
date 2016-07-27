@@ -34,10 +34,17 @@ angular.module 'landing'
         # change: (values, handle, unencoded)->
         #   console.log "change", values, handle, unencoded
 
-
-      $scope.setMarketingAutomation()
+      if $scope.onlyShow
+        if $scope.onlyShow is "marketing"
+          $scope.setMarketingAutomation()
+        else if $scope.onlyShow is "support"
+          $scope.setSupport()
+      else
+        $scope.setMarketingAutomation()
         
     directive =
       restrict: 'E'
       templateUrl: 'app/components/pricing/pricing.html'
       controller: PartnersController
+      scope: 
+        onlyShow: '@'
