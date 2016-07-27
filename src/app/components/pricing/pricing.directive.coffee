@@ -8,17 +8,20 @@ angular.module 'landing'
         orientation: 'vertical'
         direction: 'rtl'
 
+      $scope.Math=Math;
+
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
-        $scope.options.start = 10
+        $scope.options.start = 0
+        $scope.options.step = 1
         $scope.options.range =
             min: 0
-            max: 14
+            max: 200000
         console.log $scope
 
       $scope.setSupport = ->
         $scope.type = "support"
-        $scope.options.start = 13240
+        $scope.options.start = 0
         $scope.options.range =
             min: 2340
             max: 23322   
