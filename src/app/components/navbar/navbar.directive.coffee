@@ -1,11 +1,9 @@
 angular.module 'landing'
   .directive 'navbarTop', ->
 
-    NavbarController = (config, $scope, $document, $window) ->
+    NavbarController = ($scope, $document, $window) ->
       'ngInject'
       vm = this
-      $scope.signin = "#{config().webappUrl}/sign-in"
-      $scope.waitinglist = "#{config().webappUrl}/sign-up/waitinglist"
       $scope.shadeClass = vm.shadeClass
 
       $document.bind 'scroll', ->
