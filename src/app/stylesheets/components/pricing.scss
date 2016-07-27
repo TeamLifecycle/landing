@@ -4,12 +4,32 @@
 .pricing-widget {
 	width: 800px;
 	.noUi-target {
-	    height: 250px;
+	    height: 200px;
+	}
+	header {
+		margin-bottom: 50px;
+		.plans {
+			button {
+				background: transparent;
+				color: $white;
+				border: 2px solid $white;
+				box-shadow: none;
+				font-size: 12px;
+				&.active {
+					background: $white;
+					color: #5973A9;
+				}
+			}
+		}
 	}
 	.wrapper {
 		width: inherit;
 		height: 400px;
 		position: relative;
+		box-shadow: 0 7px 80px rgba(0, 0, 0, 0.2);
+		// border-radius: 5px;
+		-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 		.left {
 			width: 400px;
 			float: left;
@@ -17,21 +37,60 @@
 			background: #5A87F9;
 			color: $white;
 			padding: 30px;
+			border-top-left-radius: 5px;
+			border-bottom-left-radius: 5px;
 		}
 		.right {
 			width: 400px;
 			float: left;
 			height: 400px;
+			background-color: $white;
 			background-image: url(/assets/img/pricing/herb.png);
 			background-repeat: no-repeat;
 			background-size: 460px;
+			border-top-right-radius: 5px;
+			border-bottom-right-radius: 5px;
 		}
 		.bottom {
 			position: absolute;
 			width: inherit;
 			bottom: 0;
-			height: 50px;
+			height: 80px;
 			z-index: 2;
 		}
+	}
+}
+
+
+// slider override stuff
+.noUi-target {
+	width: 5px;
+	border: none;
+	.noUi-base {
+		// margin-left: -6px;
+		.noUi-origin {
+			background: #58C3C1;
+			// left: -2px;
+			// padding: 3px;
+			.noUi-handle {
+				cursor: pointer; 
+				cursor: hand;
+				left: -11px;
+				background: #71FFFD;
+				width: 28px;
+				height: 28px;
+				border-radius: 20px;
+				box-shadow: none;
+				border-color: #71FFFD;
+				&:before {display: none!important;}
+				&:after {display: none!important;}
+			}
+		}
+		// .noUi-handle-lower {
+		// 	background: red;
+		// }
+		// .noUi-handle-upper {
+		// 	background: blue;
+		// }
 	}
 }

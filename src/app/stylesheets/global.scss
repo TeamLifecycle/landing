@@ -7,10 +7,13 @@
 // // ---------------------------------------- \\
 section {
 	@include clearfix();
-	&:first-of-type {
-		margin-top: -71px;
-		padding-top: 140px;
-	}
+	// &:first-of-type {
+		
+	// }
+}
+section#header {
+	margin-top: -71px;
+	padding-top: 140px;
 }
 
 // // ---------------------------------------- \\
@@ -95,6 +98,14 @@ section {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.thin {
+	font-weight: 300;
 }
 
 .font-secondary {
