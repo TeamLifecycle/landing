@@ -85,10 +85,15 @@ nav {
 
 @include respond-to(sm) {
 	nav {
+		.navbar-collapse {
+			// fixes bug where on non-mobile the navbar collapses momentarily
+			&.collapsing { transition: none!important; }
+		}
 		&.white:not(.scrolled) {
-			// 
-			.navbar-collapse.in {
-				background: transparent;
+			.navbar-collapse {
+				&.in {
+					background: transparent;
+				}
 			}
 			.navbar-nav {
 				&> li {

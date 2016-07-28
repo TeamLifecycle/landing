@@ -24,7 +24,7 @@ angular.module 'landing'
         $scope.type = "support"
         $rootScope.pricingType = "support"
         # $rootScope.$apply()
-        $scope.options.start = 5000
+        $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
             min: 0

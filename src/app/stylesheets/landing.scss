@@ -8,11 +8,15 @@
 		padding: 60px 0;
 	}
 	section#header {
+		.cta {
+			margin-top: 15px;
+		}
 		.subtext {
+			margin-top: 20px;
 			line-height: 27px;
 		}
 		.dudes {
-			height: 780px;
+			height: 590px;
 			img {
 				position: absolute;
 				&.dude-1 {
@@ -58,4 +62,28 @@
 		// }
 	}
 
+}
+
+@include respond-to(sm) {
+	.page-landing {
+		section#header {
+			.hero {
+				padding-top: 60px;
+				.yell {
+					line-height: 50px;
+				}
+				.cta {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(md) {
+	.page-landing {
+  		.nav {
+  			margin-top: 20px;
+  		}
+  	}
 }
