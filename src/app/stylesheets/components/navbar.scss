@@ -13,6 +13,12 @@ nav {
 	.navbar-nav {
 		&> li {
 			text-transform: uppercase;
+			&> a {
+				&:hover {
+					background: inherit!important;
+					color: inherit!important;
+				}
+			}
 		}
 	}
 
@@ -29,10 +35,7 @@ nav {
 			&> li {
 				&> a {
 					background: inherit!important;
-					&:hover {
-						background: inherit!important;
-						color: inherit!important;
-					}
+					color: $brand-grey;
 				}
 			}
 		}
@@ -48,11 +51,19 @@ nav {
 			background-image: url(/assets/img/logo/logo.white.png);
 		}
 		.navbar-collapse.in {
-			background: #405687;
+			background: rgb(36, 44, 66);
 			border-top: none;
 		}
 		.navbar-nav {
 			&> li {
+				.dropdown-menu > li > a {
+					color: $white;
+					&:hover {
+				// 		color: $white;
+						background: inherit!important;	
+				// 		opacity: .8;
+					}
+				}
 				&> a {
 					color: $white;
 					background: inherit!important;
@@ -75,6 +86,18 @@ nav {
 		// 
 		.navbar-collapse.in {
 			background: transparent;
+		}
+		.navbar-nav {
+			&> li {
+				.dropdown-menu > li > a {
+					color: inherit;
+					&:hover {
+						color: inherit;
+						background: inherit!important;	
+						opacity: .8;
+					}
+				}
+			}
 		}
 	}
 }

@@ -7,12 +7,12 @@
     </header>
     <div class="wrapper">
 	    <div class="left">
-	    	<h4 class="text-center thin">Slide to your team size to see pricing</h4>
+	    	<h4 class="text-center light">Slide to your team size to see pricing</h4>
 	    	<div class="col-xs-3">
 	    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
 	    	</div>
 	    	<div class="col-xs-9 text-left">
-	    		<h2 class="thin header">
+	    		<h2 class="light header">
 	    			<span ng-bind="currentValue"></span> People
 	    		</h2>
 
@@ -20,7 +20,7 @@
 	    			Your plan:
 	    		</p>
 	    		<p>
-	    			Studio plan for $<span ng-bind="price"></span>/mo
+	    			$<b ng-bind="price"></b>/mo
 	    		</p>
 	    		<p>
 	    			Up to <span ng-bind="currentValue"></span> People
@@ -28,11 +28,11 @@
 	    		
 	    	</div>
 	    </div>
-	    <div class="right">
+	    <div class="right hidden-xs">
 			<!-- background img -->
 	    </div>
 	    <div class="bottom text-center">
-	    	<a href="/#/sign-up-beta" class="btn btn-lg btn-info btn-rounded">Signup Now</a>
+	    	<a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded">Signup Now</a>
 	    </div>
 	</div>
 </section>

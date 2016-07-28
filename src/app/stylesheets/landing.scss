@@ -4,6 +4,9 @@
 .page-landing {
 	background-image: url(/assets/img/landing/landing-header.png);
 	background-repeat: no-repeat;
+	.featurette {
+		padding: 60px 0;
+	}
 	section#header {
 		.subtext {
 			line-height: 27px;

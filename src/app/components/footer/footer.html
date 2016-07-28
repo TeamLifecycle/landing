@@ -1,13 +1,13 @@
 <footer class="footer col-xs-12" style="background-image: url({{img}});">
     <section class="cta text-center">
         <h2 class="blurb text-white">{{ctaText}}</h2>
-        <a href="/#/sign-up-beta" class="btn btn-lg btn-info btn-rounded">{{ctaButtonText}}</a>
+        <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded">{{ctaButtonText}}</a>
     </section>
 
-    <div class="nav container text-white">
+    <div class="nav container text-white hidden-xs">
         <!-- company ingo -->
         <div class="col-xs-3">
-            <div class="title">
+            <div class="logo">
               <img src="/assets/img/logo/logo.light.png" class="logo">
             </div>
             <ul class="site-footer-links list-unstyled">
@@ -20,7 +20,7 @@
         </div>
         <!-- product -->
         <div class="col-xs-3">
-            <div class="title">Product</div>
+            <div class="title xbold">Product</div>
             <ul class="site-footer-links list-unstyled">
                 <li><a href="#/products/support">Conversations</a></li>
                 <li><a href="#/products/marketing">Campaigns</a></li>
@@ -32,7 +32,7 @@
         </div>
         <!-- company -->
         <div class="col-xs-3">
-            <div class="title">Company</div>
+            <div class="title xbold">Company</div>
             <ul class="site-footer-links list-unstyled">
                 <li><a href="https://angel.co/lifecycle/jobs">Careers</a></li>
                 <li><a href="#/pricing">Contact</a></li>
@@ -42,10 +42,13 @@
         </div>
         <!-- blog -->
         <div class="col-xs-3" ng-show="posts">
-            <div class="title">Hot off the Press</div>
-            <ul id="menu" class="site-footer-links list-unstyled">
+            <div class="title xbold">Hot off the Press</div>
+            <ul id="posts" class="site-footer-links list-unstyled">
                 <li ng-repeat="post in posts">
-                    <a ng-href="http://blog.lifecycle.io{{post.url}}" target="_blank">{{post.title}}</a>
+                    <a ng-href="http://blog.lifecycle.io{{post.url}}" target="_blank">
+                        <span class="semibold">{{post.title}}</span><br>
+                        <span class="brand-grey">by Steffan Howey</span>
+                    </a>
                 </li>
             </ul>
         </div>

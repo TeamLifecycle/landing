@@ -2,39 +2,6 @@
     LESS VARIABLES
    =============================== */
 
-// RESPONSIVE
-@mixin respond-to($breakpoint) {
-  @if $breakpoint == "sm" {
-    @media (min-width: 767px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "md" {
-    @media (min-width: 992px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "lg" {
-    @media (min-width: 1200px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "xl" {
-    @media (min-width: 1600px) {
-      @content;
-    }
-  }
-
-  @else if $breakpoint == "xxl" {
-    @media (min-width: 2000px) {
-      @content;
-    }
-  }
-}
-
 $white: 				#FFFFFF;
 $black: 				#000000;
 

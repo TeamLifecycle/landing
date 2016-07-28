@@ -21,22 +21,43 @@ footer.footer {
 	.nav {
 		height: $twoHeight;
 		padding-top: 110px;
-		img.logo {
-			height: 30px;
+		div.logo {
+			margin-top: -10px;
+			margin-bottom: 15px;
+			img.logo {
+				height: 30px;
+			}
 		}
 		.title {
 			text-transform: uppercase;
-			font-weight: bold;
-			margin-bottom: 10px;
+			// font-weight: bold;
+			margin-bottom: 15px;
 		}
 		li a {
 			color: $white;
+			// font-weight: 300;
 		}
+		ul.site-footer-links {
+			&> li {
+				margin-bottom: 10px;
+			}
+		}
+		#posts {
+			border-left: 1px solid $white;
+			margin-left: -10px;
+			li {
+				margin-left: 10px;
+			}
+		}
+
 	}
 	.made-in {
 		height: $threeHeight;
 		padding-top: 25px;
 		background: rgb(36, 44, 66);
+		bottom: 0;
+		position: absolute;
+		width: 100%;
 	}
 }
 
