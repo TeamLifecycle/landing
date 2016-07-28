@@ -75,7 +75,7 @@ a:hover {
 		.item {
 			height: 380px;
 			img {
-				width: 150px;
+				height: 150px;
 			}
 			// .title {
 			// 	margin-top: 20px;
@@ -114,13 +114,17 @@ a:hover {
 	color: $brand-pink;
 }
 
-.breathe {
-	&.xs { padding: 20px 0; }
-	&.sm { padding: 40px 0; }
-	&.md { padding: 60px 0; }
-	&.lg { padding: 80px 0; }
-	&.xl { padding: 100px 0; }
-}
+.breathe-xs { padding: 20px 0; }
+.breathe-sm { padding: 40px 0; }
+.breathe-md { padding: 60px 0; }
+.breathe-lg { padding: 80px 0; }
+.breathe-xl { padding: 100px 0; }
+
+.line-sm { line-height: .75em; }
+.line-md { line-height: 1.25em; }
+.line-lg { line-height: 1.5em; }
+.line-lg { line-height: 1.75em; }
+
 
 .text-white {
 	color: $white;
@@ -129,6 +133,10 @@ a:hover {
 .center {
 	margin: 0 auto;
 }
+
+.m-20 { margin: 20px 0; }
+.m-30 { margin: 30px 0; }
+.m-40 { margin: 40px 0; }
 
 .btn-rounded {
 	border-radius: 29px;

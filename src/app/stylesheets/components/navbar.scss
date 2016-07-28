@@ -85,11 +85,18 @@ nav {
 
 @include respond-to(sm) {
 	nav {
+		.dropdown-menu {
+			border-top: none;
+		}
 		.navbar-collapse {
 			// fixes bug where on non-mobile the navbar collapses momentarily
 			&.collapsing { transition: none!important; }
 		}
 		&.white:not(.scrolled) {
+			.dropdown-menu {
+				background: rgb(36, 44, 66);
+				color: $white;
+			}
 			.navbar-collapse {
 				&.in {
 					background: transparent;
