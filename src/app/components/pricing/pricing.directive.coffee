@@ -34,7 +34,10 @@ angular.module 'landing'
         update: (values, handle, unencoded) ->
           console.log "update", values, handle, unencoded
           $scope.currentValue = String(values[0]/1).replace /\B(?=(\d{3})+(?!\d))/g, ','
-          $scope.price = String((((Math.floor(values[0]/10000) * 10000)/1000)*2) + 20).replace /\B(?=(\d{3})+(?!\d))/g, ','
+          if values[0]/1 is 0
+            $scope.price = 0
+          else
+            $scope.price = String((((Math.floor(values[0]/10000) * 10000)/1000)*2) + 20).replace /\B(?=(\d{3})+(?!\d))/g, ','
         # slide: (values, handle, unencoded) ->
         #   console.log "slide", values, handle, unencoded
         # set: (values, handle, unencoded) ->
