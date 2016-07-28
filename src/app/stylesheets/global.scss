@@ -58,6 +58,13 @@ a:hover {
 	}
 }
 
+@include respond-to(md) {
+	.clicky-tabs {
+		ul.nav {
+			margin-top: 50px;
+		}
+	}
+}
 @include respond-to(sm) {
 	.cards {
 		&.no-height {
