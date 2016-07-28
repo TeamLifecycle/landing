@@ -10,20 +10,15 @@
 	section#header {
 		height: 800px;
 	}
-	#featurettes-23 {
-		.featurette {
-			padding: 100px 0;
-		}
-		.special-bg {
-			padding-top: 200px;
-			background-image: url(/assets/img/support/hand_bg.png);
-			background-repeat: no-repeat;
-			background-position: top center;
-			background-size: 1500px;
-			height: 1060px;
-			img {
+	.special-bg {
+		padding-top: 200px;
+		background-image: url(/assets/img/support/hand_bg.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: 1500px;
+		height: 1060px;
+		img {
 
-			}
 		}
 	}
 }
