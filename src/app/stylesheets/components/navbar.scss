@@ -17,6 +17,11 @@ nav {
 	}
 
 	&.dark, &.scrolled {
+		.navbar-toggle {
+			.icon-bar {
+				background: lightgrey;
+			}
+		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.dark.png);
 		}
@@ -34,8 +39,17 @@ nav {
 	}
 
 	&.white:not(.scrolled) {
+		.navbar-toggle {
+			.icon-bar {
+				background: $white;
+			}
+		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);
+		}
+		.navbar-collapse.in {
+			background: #405687;
+			border-top: none;
 		}
 		.navbar-nav {
 			&> li {
@@ -53,5 +67,22 @@ nav {
 	}
 	&.scrolled {
 		background: white;
+	}
+}
+
+@include respond-to(sm) {
+	nav.white:not(.scrolled) {
+		// 
+		.navbar-collapse.in {
+			background: transparent;
+		}
+	}
+}
+
+@include respond-to(md) {
+	.navbar-right {
+		&> li {
+			float: right;
+		}
 	}
 }
