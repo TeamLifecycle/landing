@@ -6,14 +6,14 @@ nav {
 	background: transparent;
 	.navbar-brand {
 		width: 200px;
-		background-size: 130px;
 		background-repeat: no-repeat;
-		background-position-y: 8px;
+		background-size: 110px;
+		background-position-y: 11px;
 	}
 	.navbar-nav {
 		&> li {
 			text-transform: uppercase;
-			&> a {
+			&> a:not(.special-btn) {
 				&:hover {
 					background: inherit!important;
 					color: inherit!important;
@@ -33,11 +33,15 @@ nav {
 		}
 		.navbar-nav {
 			&> li {
-				&> a {
+				&> a:not(.special-btn) {
 					background: inherit!important;
 					color: $brand-grey;
 				}
 			}
+		}
+		.navbar-collapse.in {
+			background: white;
+			border-top: none;
 		}
 	}
 
@@ -59,14 +63,12 @@ nav {
 				.dropdown-menu > li > a {
 					color: $white;
 					&:hover {
-				// 		color: $white;
 						background: inherit!important;	
-				// 		opacity: .8;
 					}
 				}
-				&> a {
+				&> a:not(.special-btn) {
 					color: $white;
-					background: inherit!important;
+					background: inherit;
 					&:hover, &:focus, &:active {
 						background: inherit!important;
 						color: $white!important;
@@ -82,23 +84,35 @@ nav {
 }
 
 @include respond-to(sm) {
-	nav.white:not(.scrolled) {
-		// 
-		.navbar-collapse.in {
-			background: transparent;
-		}
-		.navbar-nav {
-			&> li {
-				.dropdown-menu > li > a {
-					color: inherit;
-					&:hover {
+	nav {
+		&.white:not(.scrolled) {
+			// 
+			.navbar-collapse.in {
+				background: transparent;
+			}
+			.navbar-nav {
+				&> li {
+					.dropdown-menu > li > a {
 						color: inherit;
-						background: inherit!important;	
-						opacity: .8;
+						&:hover {
+							color: inherit;
+							background: inherit!important;	
+							opacity: .8;
+						}
 					}
 				}
 			}
 		}
+	}
+	.signup-btn {
+		background: #67BCF0!important;
+	    color: $white!important;
+	    border-radius: 100px!important;
+	    padding: 7px 13px!important;
+	    margin-top: 8px!important;
+	    &:hover {
+	    	background: darken(#67BCF0, 10%);
+	    }
 	}
 }
 
