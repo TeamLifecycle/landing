@@ -13,7 +13,7 @@ angular.module 'landing'
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
         $rootScope.pricingType = "marketing"
-        $scope.options.start = 0
+        $scope.options.start = 10000
         $scope.options.step = 10000
         $scope.options.range =
             min: 0
@@ -22,7 +22,7 @@ angular.module 'landing'
       $scope.setSupport = ->
         $scope.type = "support"
         $rootScope.pricingType = "support"
-        $scope.options.start = 0
+        $scope.options.start = 10000
         $scope.options.step = 10000
         $scope.options.range =
             min: 0
@@ -34,6 +34,7 @@ angular.module 'landing'
           peopleNum = values[0]
           setLevel $scope, peopleNum
           $scope.peopleNumPretty = String(peopleNum/1).replace /\B(?=(\d{3})+(?!\d))/g, ','
+          if $scope.peopleNumPretty is "200,000" then $scope.peopleNumPretty = "200,000+"
           if values[0]/1 is 0
             $scope.price = 0
           else
