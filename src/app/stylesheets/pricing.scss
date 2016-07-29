@@ -5,11 +5,19 @@
 	background-image: url(/assets/img/pricing/header_bg.png);
 	background-repeat: no-repeat;
 	background-size: auto 1000px;
-	background-position-y: -200px;
+	background-position-y: -310px;
 	section#header {
-		height: 1040px;
+		height: 850px;
 	}
 	div#pricing-widget {
-		margin-top: 160px;
+		margin-top: 50px;
+	}
+}
+
+@include respond-to(sm) {
+	.page-pricing {
+		section#header {
+			height: 1040px;
+		}
 	}
 }
