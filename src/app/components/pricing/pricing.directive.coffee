@@ -13,7 +13,6 @@ angular.module 'landing'
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
         $rootScope.pricingType = "marketing"
-        # $rootScope.$apply()
         $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
@@ -23,7 +22,6 @@ angular.module 'landing'
       $scope.setSupport = ->
         $scope.type = "support"
         $rootScope.pricingType = "support"
-        # $rootScope.$apply()
         $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
@@ -33,17 +31,13 @@ angular.module 'landing'
       $scope.eventHandlers =
         update: (values, handle, unencoded) ->
           console.log "update", values, handle, unencoded
-          $scope.currentValue = String(values[0]/1).replace /\B(?=(\d{3})+(?!\d))/g, ','
+          peopleNum = values[0]
+          setLevel $scope, peopleNum
+          $scope.peopleNumPretty = String(peopleNum/1).replace /\B(?=(\d{3})+(?!\d))/g, ','
           if values[0]/1 is 0
             $scope.price = 0
           else
             $scope.price = String((((Math.floor(values[0]/10000) * 10000)/1000)*2) + 20).replace /\B(?=(\d{3})+(?!\d))/g, ','
-        # slide: (values, handle, unencoded) ->
-        #   console.log "slide", values, handle, unencoded
-        # set: (values, handle, unencoded) ->
-        #   console.log "set", values, handle, unencoded
-        # change: (values, handle, unencoded)->
-        #   console.log "change", values, handle, unencoded
 
       if $scope.onlyShow
         if $scope.onlyShow is "marketing"
@@ -59,3 +53,13 @@ angular.module 'landing'
       controller: PartnersController
       scope: 
         onlyShow: '@'
+
+
+setLevel = (scope, numPeople) ->
+    console.log numPeople
+    if numPeople < 1
+      scope["level"] = 1
+    else if numPeople < 200000
+      scope["level"] = 2
+    else
+      scope["level"] = 3

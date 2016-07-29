@@ -44,15 +44,33 @@
 			border-bottom-left-radius: 5px;
 		}
 		.right {
+			position: relative;
 			width: 400px;
 			float: left;
 			height: 400px;
 			background-color: $white;
-			background-image: url(/assets/img/pricing/herb.png);
+			background-image: url(/assets/img/pricing/bg.png);
 			background-repeat: no-repeat;
 			background-size: 460px;
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
+			background-position-y: 50px;
+			img {
+				margin: auto;
+				position: absolute;
+				top: 0; left: 0; bottom: 0; right: 0;
+				// &#baby {
+				// 	$baby: 100px;
+				// 	width: $baby;
+				// 	left: calc(50% - (#{$baby} * .5))
+				// }
+				// &#teen {
+				// 	height: 270px;
+				// }
+				// &#adult {
+				// 	height: 340px;
+				// }
+			}
 		}
 		.bottom {
 			position: absolute;
