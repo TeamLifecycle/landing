@@ -2,18 +2,24 @@
   <navbar-top shade-class=dark></navbar-top>
 
   <section id="header" class="container clearfix">
-    <div class="col-md-4 text-left container">
-      <h1 class="font-secondary">
+    <div class="col-md-6 text-left container breathe-lg">
+      <h1 class="font-secondary line-md">
         App Store
       </h1>
-      <p class="subtext">
-        Browse and discover hundreds of apps and integrations to customize Lifecycle to fit your comany's unique needs.
-      </p>
+      <div class="cta m-30">
+        <h4 class="brand-grey line-xl">
+          Browse and discover hundreds of apps and integrations to customize Lifecycle to fit your comany's unique needs.
+        </h4>
+      </div>
     </div>
   </section>
 
   <section class="container clearfix text-center" id="featured">
-    <h2 class="text-left">Featured Apps &amp; Integrations</h2>
+    <header class="row row-centered clearfix">
+      <div class="col-xs-6 text-left">
+        <h3>Featured Apps &amp; Integrations</h3>
+      </div>
+    </header>
     <div class="row">
       <div class="col-md-4">
         <div class="panel panel-default" id="fbm">
@@ -55,8 +61,19 @@
   </section>
 
   <section id="integrations">
-    <section class="container clearfix text-center">
-      <h2 class="text-left">Illum alias expedita</h2>
+    <section class="container clearfix text-center breathe-lg">
+      <header class="row row-centered clearfix">
+        <div class="col-xs-6 text-left">
+          <h3>Illum alias expedita</h3>
+        </div>
+        <div class="col-xs-6 text-right">
+          <div class="more">
+            <span class="inline-block brand-pink more" ng-init="isCollapsed1 = true" ng-click="isCollapsed1 = !isCollapsed1" ng-show="isCollapsed1">
+              Show More
+            </span>
+          </div>
+        </div>
+      </header>
       <div class="row">
         <div class="col-md-4">
           <div class="panel panel-default">
@@ -97,6 +114,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-4">
           <div class="panel panel-default">
             <div class="panel-body">
@@ -136,98 +154,194 @@
             </div>
           </div>
         </div>
+
+      <!-- COLLAPSE -->
+        <div class="col-md-4" class="collapse" uib-collapse="isCollapsed1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="col-xs-3 img-wrapper">
+                <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
+              </div>
+              <div class="col-xs-9 description">
+                <h4 class="title">Messages (SMS)</h4>
+                <p class="brand-grey">Communications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" class="collapse" uib-collapse="isCollapsed1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="col-xs-3 img-wrapper">
+                <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
+              </div>
+              <div class="col-xs-9 description">
+                <h4 class="title">Whatsapp</h4>
+                <p class="brand-grey">Communications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" class="collapse" uib-collapse="isCollapsed1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="col-xs-3 img-wrapper">
+                <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
+              </div>
+              <div class="col-xs-9 description">
+                <h4 class="title">Twitter</h4>
+                <p class="brand-grey">Communications</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- END COLLAPSE -->
       </div>
     </section>
 
     <section class="container clearfix text-center">
-      <h2 class="text-left">Illum alias expedita</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Messages (SMS)</h4>
-                <p class="brand-grey">Communications</p>
+          <header class="row row-centered clearfix">
+            <div class="col-xs-6 text-left">
+              <h3>Illum alias expedita</h3>
+            </div>
+            <div class="col-xs-6 text-right">
+              <div class="more">
+                <span class="inline-block brand-pink more" ng-init="isCollapsed2 = true" ng-click="isCollapsed2 = !isCollapsed2" ng-show="isCollapsed2">
+                  Show More
+                </span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Whatsapp</h4>
-                <p class="brand-grey">Communications</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Twitter</h4>
-                <p class="brand-grey">Communications</p>
+          </header>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Messages (SMS)</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Messages (SMS)</h4>
-                <p class="brand-grey">Communications</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Whatsapp</h4>
-                <p class="brand-grey">Communications</p>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Whatsapp</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <div class="col-xs-3 img-wrapper">
-                <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
-              </div>
-              <div class="col-xs-9 description">
-                <h4 class="title">Twitter</h4>
-                <p class="brand-grey">Communications</p>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Twitter</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
               </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Messages (SMS)</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Whatsapp</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Twitter</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- COLLAPSE -->
+            <div class="col-md-4" class="collapse" uib-collapse="isCollapsed2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/sms_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Messages (SMS)</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" class="collapse" uib-collapse="isCollapsed2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/whatsapp_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Whatsapp</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" class="collapse" uib-collapse="isCollapsed2">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <div class="col-xs-3 img-wrapper">
+                    <img src="/assets/img/integrations/logos/twitter_icon.png" alt="img-responsive">
+                  </div>
+                  <div class="col-xs-9 description">
+                    <h4 class="title">Twitter</h4>
+                    <p class="brand-grey">Communications</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END COLLAPSE -->
           </div>
-        </div>
-      </div>
-    </section>
+        </section>
   </section>
 
 
-  <section id="featurettes-62" class="container">
+  <section id="featurettes-62" class="breathe-lg container">
     <div class="featurette clearfix">
-      <div class="col-xs-12 col-md-7 text-wrapper">
+      <div class="col-xs-12 col-md-6 text-wrapper">
         <h2 class="featurette-heading">Want to create your own integration with Lifecycle?</h2>
         <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded btn-outline">Get Invite</a>
       </div>

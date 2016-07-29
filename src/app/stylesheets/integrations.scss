@@ -7,8 +7,14 @@
 	background-position-x: right;
 	background-position-y: 110px;
 	background-size: 730px;
+	header {
+		margin-bottom: 20px;
+		.more {
+			margin-top: 10px;
+		}
+	}
 	section#header {
-		height: 800px;
+		height: 610px;
 	}
 	section#featured {
 		.panel {
