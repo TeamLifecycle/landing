@@ -2,12 +2,14 @@
 @import 'mixins';
 
 .page-pricing {
-	background-image: url(/assets/img/landing/landing-header.png);
+	background-image: url(/assets/img/pricing/header_bg.png);
 	background-repeat: no-repeat;
+	background-size: auto 1000px;
+	background-position-y: -200px;
 	section#header {
-		height: 1250px;
+		height: 1040px;
 	}
 	div#pricing-widget {
-		margin-top: 430px;
+		margin-top: 160px;
 	}
 }
