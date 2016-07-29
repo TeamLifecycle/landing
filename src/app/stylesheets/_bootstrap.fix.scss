@@ -5,16 +5,19 @@
     @include row-centered();
 }
 
-.featurette {
-  @include row-centered();
 
-  .lead-sm {
-  	font-size: 16px;
-  }
-  .featurette-heading {
-  	margin-bottom: 20px;
-  }
-  .btn {
-  	margin-top: 20px;
+@include respond-to(sm) {
+  .featurette {
+    @include row-centered();
+
+    .lead-sm {
+    	font-size: 16px;
+    }
+    .featurette-heading {
+    	margin-bottom: 20px;
+    }
+    .btn {
+    	margin-top: 20px;
+    }
   }
 }

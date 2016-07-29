@@ -45,8 +45,6 @@
 			background: #5A87F9;
 			color: $white;
 			padding: 30px 20px;
-			border-top-left-radius: 5px;
-			border-bottom-left-radius: 5px;
 		}
 		.right {
 			position: relative;
@@ -57,8 +55,6 @@
 			background-image: url(/assets/img/pricing/bg.png);
 			background-repeat: no-repeat;
 			background-size: 460px;
-			border-top-right-radius: 5px;
-			border-bottom-right-radius: 5px;
 			background-position-y: 50px;
 			img {
 				margin: auto;
@@ -114,6 +110,12 @@
 		.wrapper {
 			.left {
 				width: 400px;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			.right {
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
 			}
 		}
 	}

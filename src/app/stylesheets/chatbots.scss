@@ -23,7 +23,7 @@
 	section#marketing-44 {
 		background-image: url(/assets/img/chatbots/devices_illustration.png);
 		background-repeat: no-repeat;
-		height: 1000px;
+		height: 830px;
 		.title {
 			margin-top: 70px;
 		}
@@ -37,5 +37,8 @@
 	.page-chatbots {
 		background-image: url(/assets/img/chatbots/header_illustration.png);
 		background-position-y: 110px;
+		section#marketing-44 {
+			height: 1000px;
+		}
 	}
 }
