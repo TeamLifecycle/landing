@@ -110,7 +110,7 @@
 
 @include respond-to(sm) {
 	.pricing-widget {
-		widows: 800px;
+		width: 800px;
 		.wrapper {
 			.left {
 				width: 400px;

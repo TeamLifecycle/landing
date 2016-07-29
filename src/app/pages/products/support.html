@@ -2,12 +2,12 @@
   <navbar-top shade-class=dark></navbar-top>
 
   <section id="header" class="container clearfix">
-    <div class="col-md-7 text-left container breathe-lg">
-      <h1 class="font-secondary line-md">
+    <div class="col-md-6 text-left container breathe-lg">
+      <h1 class="font-secondary line-md bold">
         A delightful new way to support your customers
       </h1>
       <div class="cta m-40">
-        <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded">Get Invite</a>
+        <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded btn-invite">Get Invite</a>
       </div>
     </div>
   </section>
@@ -20,12 +20,12 @@
 
   <section class="clearfix text-center breathe-lg">
     <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h1>Make it easy for your customers to get supported anywhere</h1>
+      <div class="col-lg-8 col-lg-offset-2 font-secondary bold">
+        <h2>Deliver amazing customer service through mobile channels</h2>
       </div>
       <div class="col-lg-10 col-lg-offset-1">
         <br>
-        <p class="brand-grey">We give you a presence in the channels your customers are mostly likely to use. Provide sales and support help by messaging just like a friend - anywhere, 24/7, 365.</p>
+        <p class="brand-grey line-xl">Make yourself available to your customers in their favorite messaging apps and on every device. Seemlessly respond to support questions, sales inquiries, or take orders from the Lifecycle inbox, and deliver your responses straight to the right place at the right time.</p>
       </div>
     </div>
     <br>
@@ -36,16 +36,16 @@
 
   <section class="features clearfix container hidden-xs breathe-md">
     <header class="text-center clearfix">
-      <h1>More than a helpdesk</h1>
-      <p class="brand-grey">Everything your support team will need to make customers fall in love with your business</p>
+      <h2 class="font-secondary bold">More than a helpdesk</h2>
+      <p class="brand-grey">Everything your support team will need to make customers fall in love with your business.</p>
     </header>
 
     <uib-tabset vertical="true" type="tabs" class="clicky-tabs">
        <uib-tab index="0">
           <uib-tab-heading>
-            <h4>Conversations on every channel</h4>
+            <h4>Assign messages</h4>
             <p class="subtext brand-grey">
-              Delight your customers with automated messages that are timely &amp; personal
+              Work with your team to manage conversations.
             </p>
           </uib-tab-heading>
           <div class="content">
@@ -54,9 +54,9 @@
        </uib-tab>
        <uib-tab index="1">
           <uib-tab-heading>
-            <h4>Multi-Channel Campaigns</h4>
+            <h4>Collision Detection</h4>
             <p class="subtext brand-grey">
-              Delight your customers with automated messages that are timely &amp; personal
+              See who is replying in real-time &amp; avoid duplicate responses to the same customer.
             </p>
           </uib-tab-heading>
           <div class="content">
@@ -65,9 +65,9 @@
        </uib-tab>
        <uib-tab index="2">
           <uib-tab-heading>
-            <h4>Sales &amp; Support Bots</h4>
+            <h4>Saved Replies</h4>
             <p class="subtext brand-grey">
-              Delight your customers with automated messages that are timely &amp; personal
+              Two-click access to your most common responses.
             </p>
           </uib-tab-heading>
           <div class="content">
@@ -76,9 +76,9 @@
        </uib-tab>
        <uib-tab index="3">
           <uib-tab-heading>
-            <h4>All of your customer data, in one place</h4>
+            <h4>Respond in multiple channels</h4>
             <p class="subtext brand-grey">
-              Delight your customers with automated messages that are timely &amp; personal
+              Quickly switch between the messaging channels that your customers prefer.
             </p>
           </uib-tab-heading>
           <div class="content">
@@ -94,7 +94,7 @@
     <div class="featurette clearfix special-bg">
       <div class="col-xs-12 col-md-offset-1 col-md-6 text-wrapper">
         <h2 class="featurette-heading">Communicate like a friend</h2>
-        <p class="lead">Send your customers beautiful messages - rich with images, emoji, and lots of personality - just like you would with a friend.</p>
+        <p class="lead">Support is about so much more than just filing tickets - create highly engaging experiences by sending your customers beautiful messages - rich with images, emoji, and lots of personality - just like you would with a friend.</p>
       </div>
       <div class="col-xs-12 col-md-5">
         <img src="/assets/img/support/hand_phone.png" class="img-responsive">
@@ -105,8 +105,8 @@
   <section id="featurettes-19" class="breathe-lg container">
       <div class="featurette breathe-md clearfix">
         <div class="col-xs-12 col-md-7 col-md-push-6 text-wrapper">
-          <h2 class="featurette-heading">Do business over messaging</h2>
-          <p class="lead">Allow customers to make purchases through messaging links and rich product cards and images</p>
+          <h2 class="featurette-heading">Run your business on messaging</h2>
+          <p class="lead">Share rich product cards and accept payments from your customers - all from within the conversation. </p>
         </div>
         <div class="col-xs-12 col-md-5 col-md-pull-7">
            <img src="/assets/img/support/business_illustration.png" class="img-responsive">
@@ -114,8 +114,8 @@
       </div>
       <div class="featurette breathe-md clearfix">
         <div class="col-xs-12 col-md-7 text-wrapper">
-          <h2 class="featurette-heading">One thread, every conversation</h2>
-          <p class="lead">View every customer conversation in a single thread. Allow customers to seamlessly jump from channel to channel without skipping a beat</p>
+          <h2 class="featurette-heading">No tickets, just continuous messaging</h2>
+          <p class="lead">Allow your customers to start a conversation in one channel, and pick back up in another, without ever missing a beat.</p>
         </div>
         <div class="col-xs-12 col-md-5">
            <img src="/assets/img/support/one_illustration.png" class="img-responsive">
@@ -126,50 +126,57 @@
 
 
 
-  <section id="marketing-44" class="clearfix text-center">
-    <h2 class="title text-center">Features</h2>
+  <section id="marketing-44" class="container clearfix text-center">
+    <header class="mb-40">
+      <h2 class="title text-center">Features</h2>
+      <p class="brand-grey line-xl">Everything you need to provided amazing support</p>
+    </header>
     <div class="cards container">
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/inbox.png" class="img-responsive center">
         <h4>Team Inbox</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <p>Manage all of your customer conversations in one central inbox.</p>
       </div>
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/profile.png" class="img-responsive center">
         <h4>Customer Profile</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <p>View live customer profiles from within the conversation.</p>
       </div>
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/notes.png" class="img-responsive center">
         <h4>Notes &amp; Mentions</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <p>Leave notes &amp; collaborate with your team around conversations.</p>
       </div>
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/canned.png" class="img-responsive center">
-        <h4>Canned Replies</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <h4>Saved Replies</h4>
+        <p>Save common responses &amp; avoid duplicating your work.</p>
       </div>
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/widget.png" class="img-responsive center">
         <h4>Lifecycle Widget </h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <p>Add our real-time chat widget to your web or mobile app.</p>
       </div>
       <div class="col-xs-12 col-md-4 item">
         <img src="/assets/img/support/features/integrations.png" class="img-responsive center">
         <h4>Integrations</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
+        <p>Get more from your data by connecting with third-party apps.</p>
       </div>
     </div>
   </section>
 
 
-  <section>
-    <h2 class="title text-center">Pricing that scales with your business - starting at $0</h2>
+  <section class="container">
+    <div class="clearfix">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 class="title text-center semibold mb-40 line-lg">You get every feature completely free for up to 10,000 customers!</h2>
+      </div>
+    </div>
     <pricing-widget only-show="support"></pricing-widget>
   </section>
 
 
   <div>
-    <footer-main img="/assets/img/support/footer_bg.png"></footer-main>
+    <footer-main cta-text="Your customers want to chat - let them." img="/assets/img/support/footer_bg.png"></footer-main>
   </div>
 </div>
