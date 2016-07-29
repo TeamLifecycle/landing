@@ -30,7 +30,7 @@ nav {
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.dark.png);
-			@include image-2x("/assets/img/logo/logo.dark-2x.png",  140px, auto);
+			@include image-2x("/assets/img/logo/logo.dark-2x.png",  130px, auto);
 		}
 		.navbar-nav {
 			&> li {
