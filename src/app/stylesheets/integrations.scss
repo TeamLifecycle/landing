@@ -44,12 +44,21 @@
 			}
 		}
 	}
-	section#integrations {
+	section#all-integrations {
 		background-image: url(/assets/img/support/hand_bg.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: 1500px;
-		height:1170px;
+	}
+	section#integrations {
+		// background-image: url(/assets/img/support/hand_bg.png);
+		// background-repeat: no-repeat;
+		// background-position: top center;
+		// background-size: 1500px;
+		// height:1170px;
+		.title {
+			display: inline-block;
+		}
 		.panel {
 			text-align: left;
 			border: none;
