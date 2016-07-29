@@ -75,8 +75,8 @@
 }
 
 @include respond-to(sm) {
-	.page-chatbots {
-		background-image: url(/assets/img/chatbots/header_illustration.png);
+	.page-integrations {
+		background-image: url(/assets/img/integrations/header_illustration.png);
 		background-position-y: 110px;
 	}
 }
