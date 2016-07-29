@@ -2,10 +2,10 @@
 @import 'mixins';
 
 .page-integrations {
-	background-image: url(/assets/img/integrations/header_illustration.png);
+	background-image: url(/assets/img/integrations/header_illustration_opacity.png);
 	background-repeat: no-repeat;
 	background-position-x: right;
-	background-position-y: 110px;
+	background-position-y: 510px;
 	background-size: 730px;
 	header {
 		margin-bottom: 20px;
@@ -71,5 +71,12 @@
 				}
 			}
 		}
+	}
+}
+
+@include respond-to(sm) {
+	.page-chatbots {
+		background-image: url(/assets/img/chatbots/header_illustration.png);
+		background-position-y: 110px;
 	}
 }

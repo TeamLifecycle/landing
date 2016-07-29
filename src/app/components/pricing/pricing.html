@@ -1,41 +1,72 @@
 <section class="pricing-widget center">
-	<header class="text-center" ng-hide="onlyShow">
-	    <div class="btn-group plans" role="group" aria-label="...">
-	      <button ng-click="setMarketingAutomation()" class="btn btn-lg uppercase" ng-class="{active: type == 'marketing'}">Campaigns</button>
-	      <button ng-click="setSupport()" class="btn btn-lg uppercase" ng-class="{active: type == 'support'}">Conversations</button>
-	    </div>
-    </header>
-    <div class="wrapper">
-	    <div class="left">
-	    	<h4 class="text-center header">Slide to your team size to see pricing</h4>
-	    	<div class="col-xs-3">
-	    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
-	    	</div>
-	    	<div class="col-xs-9 text-left">
-	    		<h2 class="header header-people">
-	    			<span ng-bind="peopleNumPretty"></span> People
-	    		</h2>
 
-	    		<p>
-	    			Your plan:
-	    		</p>
-	    		<p>
-	    			$<b ng-bind="price"></b>/mo
-	    		</p>
-	    		<p>
-	    			Up to <span ng-bind="peopleNumPretty"></span> People
-	    		</p>
-	    		
-	    	</div>
-	    </div>
-	    <div class="right hidden-xs">
-			<!-- background img -->
-			<img id="baby" src="/assets/img/dudes/alien-baby.png" alt="" ng-show="level == 1">
-			<img id="teen" src="/assets/img/dudes/alien-teen.png" alt="" ng-show="level == 2">
-			<img id="adult" src="/assets/img/dudes/alien-adult.png" alt="" ng-show="level == 3">
-	    </div>
-	    <div class="bottom text-center">
-	    	<a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded">Signup Now</a>
-	    </div>
+	<div class="hidden-xs">
+		<header class="text-center" ng-hide="onlyShow">
+		    <div class="btn-group plans" role="group" aria-label="...">
+		      <button ng-click="setMarketingAutomation()" class="btn btn-lg uppercase" ng-class="{active: type == 'marketing'}">Campaigns</button>
+		      <button ng-click="setSupport()" class="btn btn-lg uppercase" ng-class="{active: type == 'support'}">Conversations</button>
+		    </div>
+	    </header>
+	    <div class="wrapper">
+		    <div class="left">
+		    	<h4 class="text-center header">Slide to your team size to see pricing</h4>
+		    	<div class="col-xs-3">
+		    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
+		    	</div>
+		    	<div class="col-xs-9 text-left">
+		    		<h2 class="header header-people">
+		    			<span ng-bind="peopleNumPretty"></span> People
+		    		</h2>
+
+		    		<p>
+		    			Your plan:
+		    		</p>
+		    		<p>
+		    			$<b ng-bind="price"></b>/mo
+		    		</p>
+		    		<p>
+		    			Up to <span ng-bind="peopleNumPretty"></span> People
+		    		</p>
+		    		
+		    	</div>
+		    </div>
+		    <div class="right hidden-xs">
+				<!-- background img -->
+				<img id="baby" src="/assets/img/dudes/alien-baby.png" alt="" ng-show="level == 1">
+				<img id="teen" src="/assets/img/dudes/alien-teen.png" alt="" ng-show="level == 2">
+				<img id="adult" src="/assets/img/dudes/alien-adult.png" alt="" ng-show="level == 3">
+		    </div>
+		    <div class="bottom text-center">
+		    	<a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info btn-rounded hidden-xs">Signup Now</a>
+		    </div>
+		</div>
 	</div>
+
+	<div class="visible-xs">
+		<div class="wrapper">
+			<div class="left">
+				<h4 class="text-center header">Slide to your team size to see pricing</h4>
+				<div class="col-xs-3">
+					<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
+				</div>
+				<div class="col-xs-9 text-left">
+					<h2 class="header header-people">
+						<span ng-bind="peopleNumPretty"></span> People
+					</h2>
+
+					<p>
+						Your plan:
+					</p>
+					<p>
+						$<b ng-bind="price"></b>/mo
+					</p>
+					<p>
+						Up to <span ng-bind="peopleNumPretty"></span> People
+					</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
 </section>

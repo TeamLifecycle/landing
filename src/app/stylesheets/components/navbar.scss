@@ -30,6 +30,7 @@ nav {
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.dark.png);
+			@include image-2x("/assets/img/logo/logo.dark-2x.png",  140px, auto);
 		}
 		.navbar-nav {
 			&> li {
@@ -53,6 +54,7 @@ nav {
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);
+			@include image-2x("/assets/img/logo/logo.white-2x.png",  140px, auto);
 		}
 		.navbar-collapse.in {
 			background: rgb(36, 44, 66);

@@ -5,32 +5,23 @@
 	background-image: url(/assets/img/marketing/marketing-header.png);
 	background-repeat: no-repeat;
 	section#header {
-		height: 1100px;
+		height: 850px;
 		img {
 			position: absolute;
 			&.parachute-1 {
-				right: 40%;
-				bottom: 70%;
+				right: 20%;
+				top: 5%;
 				width: 100px;
 			}
 			&.parachute-2 {
-				width: 160px;
-				bottom: 50%;
-			}
-			&.parachute-3 {
-				right: 10%;
-				bottom: 0%;
-				width: 400px;
-			}
-			&.earth {
-				left: 24%;
-				bottom: -10%;
-				width: 350px;
+				width: 100px;
+				left: 10%;
+				top: 80%;
 			}
 			&.spaceship {
-				width: 350px;
-				right: 3%;
-				top: -1%;
+				width: 250px;
+				left: 40%;
+				top: 60%;
 			}
 		}
 	}
@@ -65,5 +56,36 @@
 		// 		margin-top: 20px;
 		// 	}
 		// }
+	}
+}
+
+
+@include respond-to(sm) {
+	.page-marketing {
+		section#header {
+			height: 1100px;
+			img {
+				position: absolute;
+				&.parachute-1 {
+					right: 40%;
+					top: 30%;
+					width: 100px;
+				}
+				&.parachute-2 {
+					width: 160px;
+					top: 60%;
+				}
+				&.parachute-3 {
+					right: 10%;
+					top: 50%;
+					width: 400px;
+				}
+				&.spaceship {
+					width: 350px;
+					left: 65%;
+					top: 1%;
+				}
+			}
+		}
 	}
 }

@@ -2,7 +2,7 @@
 @import '../mixins';
 
 .pricing-widget {
-	width: 800px;
+	width: 100%;
 	.noUi-target {
 	    height: 200px;
 		left: 30px;
@@ -39,7 +39,7 @@
 			.header-people {
 				font-size: 28px;
 			}
-			width: 400px;
+			width: 100%;
 			float: left;
 			height: 400px;
 			background: #5A87F9;
@@ -64,17 +64,6 @@
 				margin: auto;
 				position: absolute;
 				top: 0; left: 0; bottom: 0; right: 0;
-				// &#baby {
-				// 	$baby: 100px;
-				// 	width: $baby;
-				// 	left: calc(50% - (#{$baby} * .5))
-				// }
-				// &#teen {
-				// 	height: 270px;
-				// }
-				// &#adult {
-				// 	height: 340px;
-				// }
 			}
 		}
 		.bottom {
@@ -116,11 +105,16 @@
 				}
 			}
 		}
-		// .noUi-handle-lower {
-		// 	background: red;
-		// }
-		// .noUi-handle-upper {
-		// 	background: blue;
-		// }
+	}
+}
+
+@include respond-to(sm) {
+	.pricing-widget {
+		widows: 800px;
+		.wrapper {
+			.left {
+				width: 400px;
+			}
+		}
 	}
 }

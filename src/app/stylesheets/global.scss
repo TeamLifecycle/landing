@@ -58,6 +58,12 @@ a:hover {
 	}
 }
 
+.cards {
+	img {
+		padding: 0 70px;
+	}
+}
+
 @include respond-to(md) {
 	.clicky-tabs {
 		ul.nav {
@@ -76,6 +82,7 @@ a:hover {
 			height: 380px;
 			img {
 				height: 150px;
+				padding: inherit;
 			}
 			// .title {
 			// 	margin-top: 20px;

@@ -2,10 +2,10 @@
 @import 'mixins';
 
 .page-support {
-	background-image: url(/assets/img/support/gurita_illustration.png);
+	background-image: url(/assets/img/support/gurita_illustration_opacity.png);
 	background-repeat: no-repeat;
 	background-position-x: right;
-	background-position-y: 110px;
+	background-position-y: 410px;
 	background-size: 500px;
 	section#header {
 		height: 800px;
@@ -16,9 +16,16 @@
 		background-repeat: no-repeat;
 		background-position: top center;
 		background-size: 1500px;
-		height: 1060px;
-		img {
+		height: 560px;
+	}
+}
 
-		}
+@include respond-to(sm) {
+	.page-support {
+		background-image: url(/assets/img/support/gurita_illustration.png);
+		background-position-y: 110px;
+	}
+	.special-bg {
+		height: 1060px;
 	}
 }

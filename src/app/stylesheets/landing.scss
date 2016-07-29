@@ -4,10 +4,12 @@
 .page-landing {
 	background-image: url(/assets/img/landing/landing-header.png);
 	background-repeat: no-repeat;
+	background-position-y: -190px;
 	// .featurette {
 	// 	padding: 60px 0;
 	// }
 	section#header {
+		height: 740px;
 		.cta {
 			margin-top: 15px;
 		}
@@ -16,57 +18,37 @@
 			line-height: 27px;
 		}
 		.dudes {
-			height: 590px;
+			height: 430px;
 			img {
 				position: absolute;
 				&.dude-1 {
 					left: 3%;
-					top: 0%;
-				}
-				&.dude-2 {
-					left: 25%;
-					bottom: 50%;
+					top: 90%;
 				}
 				&.dude-3 {
-					// left: 45%;
-					left: calc(50% - 35.5px);
-					top: 10%;
-				}
-				&.dude-4 {
-					right: 24%;
-					bottom: 36%;
+					left: 40%;
+					top: 110%;
 				}
 				&.dude-5 {
-					right: 3%;
-					top: -1%;
+					right: -11%;
+					top: 94%;
 				}
 			}
 		}
-	}
-	section#marketing-1 {
-
 	}
 	section#marketing-2 {
 		img {
 			width: 170px;
 		}
 	}
-	section#features-1 {
-
-	}
-	section#featurettes-1 {
-		// img {
-			// &:nth-of-type(1) { width: 738px; }
-			// &:nth-of-type(2) { width: 738px; }
-			// &:nth-of-type(3) { width: 497px; }
-		// }
-	}
 
 }
 
 @include respond-to(sm) {
 	.page-landing {
+		background-position-y: inherit;
 		section#header {
+			height: inherit;
 			.hero {
 				padding-top: 60px;
 				.yell {
@@ -74,6 +56,32 @@
 				}
 				.cta {
 					margin-top: 40px;
+				}
+			}
+			.dudes {
+				height: 590px;
+				img {
+					position: absolute;
+					&.dude-1 {
+						left: 3%;
+						top: 0%;
+					}
+					&.dude-2 {
+						left: 25%;
+						bottom: 50%;
+					}
+					&.dude-3 {
+						left: calc(50% - 35.5px);
+						top: 10%;
+					}
+					&.dude-4 {
+						right: 24%;
+						bottom: 36%;
+					}
+					&.dude-5 {
+						right: 3%;
+						top: -1%;
+					}
 				}
 			}
 		}
