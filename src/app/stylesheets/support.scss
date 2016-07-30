@@ -12,7 +12,7 @@
 	}
 	.special-bg {
 		padding-top: 200px;
-		background-image: url(/assets/img/support/hand_bg.png);
+		background-image: url(/assets/img/integrations/hand_bg.png);
 		background-repeat: no-repeat;
 		background-position: top center;
 		// background-size: 1500px;
@@ -25,8 +25,9 @@
 	.page-support {
 		background-image: url(/assets/img/support/gurita_illustration.png);
 		background-position-y: 110px;
-	}
-	.special-bg {
-		height: 1060px;
+		.special-bg {
+			height: 1060px;
+			background-image: url(/assets/img/support/hand_bg.png);
+		}
 	}
 }

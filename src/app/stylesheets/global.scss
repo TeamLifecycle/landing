@@ -252,13 +252,21 @@ a:hover {
 	padding: 0;
 }
 
-.row.match-my-cols {
-    overflow: hidden; 
+@media (max-width: 767px) {
+    .xs-center {
+    	text-align: center;
+    }
 }
 
-.row.match-my-cols [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+@include respond-to(sm) {
+	.row.match-my-cols {
+	    overflow: hidden; 
+	}
+
+	.row.match-my-cols [class*="col-"]{
+	    margin-bottom: -99999px;
+	    padding-bottom: 99999px;
+	}
 }
 
 

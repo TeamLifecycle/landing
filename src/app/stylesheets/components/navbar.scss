@@ -22,6 +22,10 @@ nav {
 		}
 	}
 
+	.dropdown-menu {
+		margin-top: -20px;
+	}
+
 	&.dark, &.scrolled {
 		.navbar-toggle {
 			.icon-bar {
@@ -44,6 +48,9 @@ nav {
 			background: white;
 			border-top: none;
 		}
+		.signup-btn {
+			color: $brand-pink;
+		}
 	}
 
 	&.white:not(.scrolled) {
@@ -51,6 +58,9 @@ nav {
 			.icon-bar {
 				background: $white;
 			}
+		}
+		.signup-btn {
+			color: $brand-pink;
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);

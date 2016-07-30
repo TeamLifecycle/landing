@@ -8,6 +8,12 @@
 		left: 30px;
 		top: 5px;
 	}
+	.alien-wrapper-xs {
+		text-align: center;
+		img {
+			height: 100px;
+		}
+	}
 	header {
 		margin-bottom: 50px;
 		.plans {
@@ -33,11 +39,15 @@
 		-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 		.left {
+			width:  90%;
+			margin-left: 5%;
+			border-radius: 5px;
 			.header {
 				margin-bottom: 30px;
 			}
 			.header-people {
-				font-size: 28px;
+				// needs to fit "200,000+ People"
+				font-size: 25px;
 			}
 			.high-range {
 				position: absolute;
@@ -45,7 +55,6 @@
 				font-size: 11px;
 				top: 5px;
 			}
-			width: 100%;
 			float: left;
 			height: 400px;
 			background: #5A87F9;
@@ -54,8 +63,8 @@
 		}
 		.right {
 			position: relative;
-			width: 400px;
 			float: left;
+			width: 400px;
 			height: 400px;
 			background-color: $white;
 			background-image: url(/assets/img/pricing/bg.png);
@@ -77,6 +86,11 @@
 		}
 	}
 }
+
+// @include respond-to(sm) {
+// 	.left {
+// 	}
+// }
 
 
 // slider override stuff
@@ -116,8 +130,10 @@
 		.wrapper {
 			.left {
 				width: 400px;
+				border-radius: inherit;
 				border-top-left-radius: 5px;
 				border-bottom-left-radius: 5px;
+				margin-left: inherit;
 			}
 			.right {
 				border-top-right-radius: 5px;
