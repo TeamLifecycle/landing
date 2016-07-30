@@ -1,4 +1,36 @@
 <footer class="footer col-xs-12" style="background-image: url({{img}});">
+
+
+
+<div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="item in items">
+                    <a href="#" ng-click="$event.preventDefault(); selected.item = item">{{ item }}</a>
+                </li>
+            </ul>
+            Selected: <b>{{ selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+<!-- 
+    <button type="button" class="btn btn-default" ng-click="open()">Open me!</button>
+    <button type="button" class="btn btn-default" ng-click="open('lg')">Large modal</button>
+    <button type="button" class="btn btn-default" ng-click="open('sm')">Small modal</button>
+    <button type="button" class="btn btn-default" ng-click="toggleAnimation()">Toggle Animation ({{ animationsEnabled }})</button>
+    <div ng-show="selected">Selection from a modal: {{ selected }}</div> -->
+</div>
+
+
+
+
     <section class="cta text-center col-xs-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
         <h2 class="blurb text-white font-secondary bold">{{ctaText}}</h2>
         <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info uppercase">{{ctaButtonText}}</a>
@@ -11,11 +43,11 @@
               <img src="/assets/img/logo/logo.light.png" class="logo">
             </div>
             <ul class="site-footer-links list-unstyled">
-                <li><a href="#/pricing">Privacy Policy</a></li>
-                <li><a href="#/pricing">Terms of Service</a></li>
-                <li><a href="#/pricing">Schedule a Demo</a></li>
-                <li><a href="#/pricing">FAQ</a></li>
-                <li><a href="#/pricing">Customer Support</a></li>
+                <li><a href="#/privacy">Privacy Policy</a></li>
+                <li><a href="#/terms">Terms of Service</a></li>
+                <li><a ng-controller="ModalDemoCtrl" ng-click="open()">Schedule a Demo</a></li>
+                <!-- <li><a href="#/faq">FAQ</a></li> -->
+                <li><a href="modal">Customer Support</a></li>
             </ul>
         </div>
         <!-- product -->
@@ -35,9 +67,9 @@
             <div class="title xbold">Company</div>
             <ul class="site-footer-links list-unstyled">
                 <li><a href="https://angel.co/lifecycle/jobs">Careers</a></li>
-                <li><a href="#/pricing">Contact</a></li>
+                <li><a href="mailto:hello@lifecycle.io">Contact</a></li>
                 <li><a href="http://blog.lifecycle.io">Blog</a></li>
-                <li><a href="">Investors</a></li>
+                <li><a href="https://angel.co/lifecycle">Investors</a></li>
             </ul>
         </div>
         <!-- blog -->
