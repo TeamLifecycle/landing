@@ -42,3 +42,43 @@
 		}
 	}
 }
+
+@include respond-to(lg) {
+	.page-chatbots {
+		section#marketing-93 {
+			padding-top: 100px;
+			background-size: cover;
+			height: 1400px;
+		}
+	}
+}
+
+@include respond-to(xl) {
+	.page-chatbots {
+		section#marketing-44, section#marketing-93 {
+			background-size: contain;
+			padding-top: 100px;
+		}
+		section#marketing-44 {
+			height: 1200px;
+		}
+		section#marketing-93 {
+			height: 1400px;
+		}
+	}
+}
+
+@include respond-to(xxl) {
+	.page-chatbots {
+		section#marketing-44, section#marketing-93 {
+			background-size: contain;
+			padding-top: 200px;
+		}
+		section#marketing-44 {
+			height: 1600px;
+		}
+		section#marketing-93 {
+			height: 2000px;
+		}
+	}
+}

@@ -36,6 +36,13 @@ $font-size-h4:            28px;
 $font-size-h5:            22px;
 $font-size-h6:            20px;
 
+$font-size-mobile-h1:            ($font-size-h1  * .8);
+$font-size-mobile-h2:            ($font-size-h2  * .8);
+$font-size-mobile-h3:            ($font-size-h3  * .8);
+$font-size-mobile-h4:            ($font-size-h4  * .8);
+$font-size-mobile-h5:            ($font-size-h5  * .8);
+$font-size-mobile-h6:            ($font-size-h6  * .8);
+
 $headings-font-weight:    600; //semibold
 
 $font-size-small:        14px;

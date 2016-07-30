@@ -14,10 +14,18 @@
 	}
 }
 
-@include respond-to(sm) {
+@include respond-to(xl) {
 	.page-pricing {
-		section#header {
-			height: 1040px;
-		}
+		background-position-y: inherit;
+		background-size: contain;
+		background-position-y: -450px;
 	}
+
+}
+
+@include respond-to(xxl) {
+	.page-pricing {
+		background-position-y: -850px;
+	}
+
 }

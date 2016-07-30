@@ -258,16 +258,38 @@ a:hover {
     }
 }
 
-@include respond-to(sm) {
-	.row.match-my-cols {
-	    overflow: hidden; 
+// iPhone5
+@media (max-width: 400px) {
+	h1 {
+		font-size: $font-size-mobile-h1;
 	}
-
-	.row.match-my-cols [class*="col-"]{
-	    margin-bottom: -99999px;
-	    padding-bottom: 99999px;
+	h2 {
+		font-size: $font-size-mobile-h2;
+	}
+	h3 {
+		font-size: $font-size-mobile-h3;
+	}
+	h4 {
+		font-size: $font-size-mobile-h4;
+	}
+	h5 {
+		font-size: $font-size-mobile-h5;
+	}
+	h6 {
+		font-size: $font-size-mobile-h6;
 	}
 }
+
+// @include respond-to(sm) {
+// 	.row.match-my-cols {
+// 	    overflow: hidden; 
+// 	}
+
+// 	.row.match-my-cols [class*="col-"]{
+// 	    margin-bottom: -99999px;
+// 	    padding-bottom: 99999px;
+// 	}
+// }
 
 
 

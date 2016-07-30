@@ -103,3 +103,19 @@ footer.footer {
 		}
 	}
 }
+
+@include respond-to(xl) {
+	footer.footer {
+		background-position: center top;
+		background-size: cover;
+		background-position-y: -200px;
+	}
+}
+
+@include respond-to(xxl) {
+	footer.footer {
+		background-position: center top;
+		background-size: cover;
+		background-position-y: -600px;
+	}
+}

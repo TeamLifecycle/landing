@@ -25,17 +25,6 @@
 			}
 		}
 	}
-	section#marketing-2 {
-		// .item {
-		// 	height: 380px;
-		// 	img {
-		// 		width: 150px;
-		// 	}
-		// 	.title {
-		// 		margin-top: 20px;
-		// 	}
-		// }
-	}
 	section#marketing-5 {
 		background-image: url(/assets/img/marketing/phone_bg.png);
 		background-repeat: no-repeat;
@@ -89,4 +78,47 @@
 			}
 		}
 	}
+}
+
+@include respond-to(xl) {
+	.page-marketing {
+		background-position-y: inherit;
+		background-size: contain;
+		background-position-y: -450px;
+		section#header img {
+			&.parachute-1 {
+				right: 40%;
+				top: 100px;
+				width: 100px;
+			}
+			&.parachute-2 {
+				width: 160px;
+				top: 300px;
+			}
+			&.parachute-3 {
+				right: 10%;
+				top: 50%;
+				top: 300px;
+			}
+			&.spaceship {
+				width: 250px;
+				left: inherit;
+				right: 15%;
+				top: 100px;
+			}
+		}
+		section#marketing-5 {
+			background-size: cover;
+			height: 2100px;
+			padding-top: 200px;
+		}
+	}
+
+}
+
+@include respond-to(xxl) {
+	.page-marketing {
+		background-position-y: -850px;
+	}
+
 }

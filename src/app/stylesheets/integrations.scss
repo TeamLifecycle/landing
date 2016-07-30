@@ -91,3 +91,12 @@
 		background-position-y: 110px;
 	}
 }
+
+@include respond-to(xl) {
+	.page-integrations {
+		section#all-integrations {
+			background-position-y: 0;
+			background-size: contain;
+		}
+	}
+}

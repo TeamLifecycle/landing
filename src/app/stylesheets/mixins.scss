@@ -29,12 +29,14 @@
     }
   }
 
+  // dell 27"
   @else if $breakpoint == "xl" {
     @media (min-width: 1600px) {
       @content;
     }
   }
 
+  // thunderbolt
   @else if $breakpoint == "xxl" {
     @media (min-width: 2000px) {
       @content;

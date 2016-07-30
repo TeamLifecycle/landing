@@ -31,3 +31,13 @@
 		}
 	}
 }
+
+@include respond-to(xl) {
+	.page-support {
+		.special-bg {
+			background-size: cover;
+			height: 2100px;
+			padding-top: 200px;
+		}
+	}
+}

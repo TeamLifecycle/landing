@@ -88,10 +88,18 @@
 	}
 }
 
-// @include respond-to(md) {
-// 	.page-landing {
-//   		.nav {
-//   			margin-top: 20px;
-//   		}
-//   	}
-// }
+@include respond-to(xl) {
+	.page-landing {
+		background-position-y: inherit;
+		background-size: contain;
+		background-position-y: -450px;
+	}
+
+}
+
+@include respond-to(xxl) {
+	.page-landing {
+		background-position-y: -850px;
+	}
+
+}
