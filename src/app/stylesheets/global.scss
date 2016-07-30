@@ -34,13 +34,26 @@ a:hover {
 // // Custom Styles                            \\
 // // ---------------------------------------- \\
 .clicky-tabs {
+	&.biggie {
+		img {
+		    margin-top: -50px;
+		    height: 800px;
+		}
+		ul.nav {
+			margin-left: 10%;
+			width: 30%;
+		}
+	}
+	
 	ul.nav {
-		width: 50%;
+		// margin-left: 10%;
+		// width: 30%;
+		width: 40%;
 		float: left;
 		border-bottom: none!important;
 	}
 	.content {
-		width: 50%;
+		width: 60%;
 		float: left;
 	}
 	li {
@@ -133,6 +146,9 @@ a:hover {
 	color: $brand-pink;
 }
 
+.overflow-hidden {
+	overflow: hidden;
+}
 
 .breathe-xs { padding: 10px 0; }
 .breathe-sm { padding: 20px 0; }
