@@ -176,7 +176,7 @@ a:hover {
 .mt-30 { margin-top: 30px; }
 .mt-40 { margin-top: 40px; }
 
-// .btn-rounded {
+// . {
 // 	border-radius: 29px;
 // }
 
@@ -192,6 +192,12 @@ a:hover {
 	}
 	&:hover {
 		opacity: .7;
+	}
+}
+
+.btn-group {
+	.btn {
+		border-radius: 4px;
 	}
 }
 

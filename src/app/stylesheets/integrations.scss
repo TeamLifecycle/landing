@@ -8,7 +8,7 @@
 	background-position-y: 340px;
 	background-size: 730px;
 	header {
-		margin-bottom: 40px;
+		margin-bottom: 60px;
 		.more {
 			margin-top: 10px;
 		}
@@ -45,10 +45,20 @@
 		}
 	}
 	section#all-integrations {
-		background-image: url(/assets/img/support/hand_bg.png);
+		background-image: url(/assets/img/integrations/hand_bg.png);
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position-x: center;
+		background-position-y: 400px;
 		background-size: 1500px;
+		.title {
+			font-size: 18px;
+		}
+		.coming-soon {
+			font-size: 13px;
+		}
+		p {
+			font-size: 15px;
+		}
 	}
 	section#integrations {
 		// background-image: url(/assets/img/support/hand_bg.png);
