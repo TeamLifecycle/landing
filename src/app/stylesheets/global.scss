@@ -169,6 +169,10 @@ a:hover {
 .line-lg { line-height: 1.5em; }
 .line-xl { line-height: 1.75em; }
 
+.hand {
+	cursor: pointer; 
+	cursor: hand;
+}
 
 .text-white {
 	color: $white;
