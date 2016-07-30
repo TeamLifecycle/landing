@@ -23,7 +23,7 @@ footer.footer {
 		padding-top: 110px;
 		div.logo {
 			margin-top: -10px;
-			margin-bottom: 15px;
+			margin-bottom: 19px;
 			img.logo {
 				height: 30px;
 			}
@@ -31,15 +31,16 @@ footer.footer {
 		.title {
 			text-transform: uppercase;
 			// font-weight: bold;
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 		li a {
 			color: $white;
 			// font-weight: 300;
+			font-size: 13px;
 		}
 		ul.site-footer-links {
 			&> li {
-				margin-bottom: 10px;
+				margin-bottom: 5px;
 			}
 		}
 		#posts {
@@ -54,7 +55,7 @@ footer.footer {
 	}
 	.made-in {
 		height: $threeHeight;
-		padding-top: 25px;
+		padding-top: 20px;
 		background: rgb(36, 44, 66);
 		bottom: 0;
 		position: absolute;
@@ -75,11 +76,10 @@ footer.footer {
 		}
 		.nav {
 			height: $twoHeight;
-			padding-top: 100px;
+			padding-top: 60px;
 		}
 		.made-in {
 			height: $threeHeight;
-			padding-top: 25px;
 		}
 	}
 }
@@ -97,11 +97,9 @@ footer.footer {
 		}
 		.nav {
 			height: $twoHeight;
-			padding-top: 60px;
 		}
 		.made-in {
 			height: $threeHeight;
-			padding-top: 25px;
 		}
 	}
 }

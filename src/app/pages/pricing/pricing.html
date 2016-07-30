@@ -14,74 +14,12 @@
   
   <!-- show only if marketing selected -->
   <section id="marketing-features" class="container clearfix text-center" ng-show="pricingType == 'marketing'">
-    <div class="cards">
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/announce.png" alt="announce" class="img-responsive center">
-        <h4 class="title">Make Announcements</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/cart.png" alt="cart" class="img-responsive center">
-        <h4 class="title">Prevent Cart Abandonment</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/delight.png" alt="delight" class="img-responsive center">
-        <h4 class="title">Reward Customer</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/notif.png" alt="notif" class="img-responsive center">
-        <h4 class="title">Send Notifications</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/boomerang.png" alt="boomerang" class="img-responsive center">
-        <h4 class="title">Win-back Customers</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/marketing/marketing-2/welcome.png" alt="welcome" class="img-responsive center">
-        <h4 class="title">Welcome new users</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-    </div>
+    <features-marketing></features-marketing>
   </section>
 
   <!-- show only if support selected -->
   <section id="support-features" class="clearfix text-center" ng-show="pricingType == 'support'">
-    <div class="cards container">
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/inbox.png" alt="inbox" class="img-responsive center">
-        <h4>Team Inbox</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/profile.png" alt="profile" class="img-responsive center">
-        <h4>Customer Profile</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/notes.png" alt="notes" class="img-responsive center">
-        <h4>Notes &amp; Mentions</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/canned.png" alt="canned" class="img-responsive center">
-        <h4>Canned Replies</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/widget.png" alt="widget" class="img-responsive center">
-        <h4>Lifecycle Widget </h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 item">
-        <img src="/assets/img/support/features/integrations.png" alt="integrations" class="img-responsive center">
-        <h4>Integrations</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-    </div>
+    <features-support></features-support>
   </section>
 
 
@@ -89,30 +27,7 @@
   <section class="clearfix text-center container breathe-md">
     <h2 class="text-center title">Frequently Asked Questions</h2>
     <div class="breathe-sm">
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
-      <div class="col-xs-12 col-md-4 col-md-offset-1">
-        <h4>Lorem stuff</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex vitae ipsum voluptates. Non voluptate, illum alias expedita, recusandae, et impedit maiores consectetur ut illo earum eveniet odit suscipit reprehenderit eligendi.</p>
-      </div>
+      <faq></faq>
     </div>
   </section>
 
