@@ -54,3 +54,6 @@ $headings-color:          #39434D;
 
 $dropdown-link-color: $brand-grey;
 $dropdown-link-hover-color: $brand-grey;
+
+$fa-font-path: "../../bower_components/font-awesome/fonts";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";

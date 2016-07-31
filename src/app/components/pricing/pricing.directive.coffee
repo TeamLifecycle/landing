@@ -13,7 +13,7 @@ angular.module 'landing'
       $scope.setMarketingAutomation = ->
         $scope.type = "marketing"
         $rootScope.pricingType = "marketing"
-        $scope.options.start = 10000
+        $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
             min: 0
@@ -22,7 +22,7 @@ angular.module 'landing'
       $scope.setSupport = ->
         $scope.type = "support"
         $rootScope.pricingType = "support"
-        $scope.options.start = 10000
+        $scope.options.start = 0
         $scope.options.step = 10000
         $scope.options.range =
             min: 0

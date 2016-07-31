@@ -61,6 +61,15 @@ footer.footer {
 		position: absolute;
 		width: 100%;
 	}
+	.social {
+		a {
+			margin-right: 15px;
+			color: $white;
+			&:hover {
+				// color: $brand-primary;
+			}
+		}
+	}
 }
 
 @include respond-to(md) {
