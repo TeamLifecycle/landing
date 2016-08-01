@@ -8,21 +8,21 @@
 	    </header>
 	    <div class="wrapper hidden-xs">
 		    <div class="left">
-		    	<p class="text-center header text-white">How many customers do you have?</p>
+		    	<p class="text-center header text-white">How many users do you have?</p>
 		    	<div class="col-xs-3">
 		    		<span class="high-range">200k+</span>
 		    		<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
 		    	</div>
 		    	<div class="col-xs-9 text-left">
 		    		<h2 class="header header-people text-white normal">
-		    			<span ng-bind="peopleNumPretty"></span> People
+		    			<span ng-bind="peopleNumPretty"></span> Users
 		    		</h2>
-		    		<div class="normal-line">
+		    		<div class="body normal-line">
 			    		<p>
-			    			$<b ng-bind="price"></b>/mo
+			    			<span ng-bind="planname"></span> for $<b ng-bind="price"></b>/mo
 			    		</p>
 			    		<p>
-			    			Up to <span ng-bind="peopleNumPretty"></span> People
+			    			Up to <span ng-bind="peopleNumPretty"></span> Users
 			    		</p>
 		    		</div>
 		    	</div>
@@ -40,22 +40,22 @@
 
 		<div class="wrapper visible-xs">
 			<div class="left">
-				<p class="text-center header text-white">How many customers do you have?</p>
+				<p class="text-center header text-white">How many users do you have?</p>
 				<div class="col-xs-3">
 					<span class="high-range">200k+</span>
 					<div ya-no-ui-slider='options' ya-no-ui-slider-events='eventHandlers'></div>
 				</div>
 				<div class="col-xs-9 text-left">
 					<h2 class="header header-people text-white normal">
-						<span ng-bind="peopleNumPretty"></span> People
+						<span ng-bind="peopleNumPretty"></span> Users
 					</h2>
-					<div class="normal-line">
+					<div class="body normal-line">
 						<p>
 
 							$<b ng-bind="price"></b>/mo
 						</p>
 						<p>
-							Up to <span ng-bind="peopleNumPretty"></span> People
+							Up to <span ng-bind="peopleNumPretty"></span> Users
 						</p>
 					</div>
 

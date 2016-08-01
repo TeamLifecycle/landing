@@ -58,9 +58,15 @@ angular.module 'landing'
 
 setLevel = (scope, numPeople) ->
     console.log numPeople
-    if numPeople <= 20000
+    # mvp
+    if numPeople <= 30000
       scope["level"] = 1
-    else if numPeople < 100000
+      scope["planname"] = "MVP Plan"
+    # growth
+    else if numPeople < 150000
       scope["level"] = 2
+      scope["planname"] = "Growth Plan"
+    # enterprise
     else
       scope["level"] = 3
+      scope["planname"] = "Enterprise Plan"
