@@ -2,7 +2,7 @@
 @import '../mixins';
 
 nav#top {
-	position: absolute;
+	position: fixed;
 	background: transparent;
 	padding: 6px 0 6px;
 	.navbar-brand {
@@ -133,7 +133,7 @@ nav#top {
 }
 
 @include respond-to(sm) {
-	nav {
+	nav#top {
 		.dropdown-menu {
 			top: 60px;
 			border: none;
@@ -201,9 +201,11 @@ nav#top {
 }
 
 @include respond-to(md) {
-	.navbar-right {
-		&> li {
-			float: right;
+	nav#top {
+		.navbar-right {
+			&> li {
+				float: right;
+			}
 		}
 	}
 }

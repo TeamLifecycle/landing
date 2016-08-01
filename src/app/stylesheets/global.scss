@@ -129,7 +129,7 @@ a:hover {
 	}
 }
 @include respond-to(sm) {
-	nav.white:not(.scrolled) {
+	nav#top.white:not(.scrolled) {
 		// 
 		.navbar-collapse.in {
 			background: transparent;
