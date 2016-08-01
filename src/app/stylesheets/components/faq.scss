@@ -1,0 +1,35 @@
+@import '../variables';
+@import '../mixins';
+
+.faq {
+	.wrapper {
+		padding: 10px 0px;
+		&.active {
+			.answer {
+				border-top: 1px solid #fff;
+				margin-top: -1px;
+			}
+		}
+		&:focus {
+				outline: none;
+			}
+		.row {
+			// question row
+			&:first-child {
+				border-bottom: 1px solid $brand-grey-lightest;
+			}
+			.question {
+				text-align: left;
+				// &:focus {
+				// 	outline: none;
+				// }
+			}
+			.toggle {
+				text-align: center;
+			}
+			&.answer {
+				text-align: left;
+			}
+		}
+	}
+}
