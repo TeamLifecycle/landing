@@ -35,13 +35,14 @@ a:hover {
 // // ---------------------------------------- \\
 .clicky-tabs {
 	&.biggie {
+		margin-left: 8.33333%; // col-sm-offset-1
 		img {
 		    margin-top: -50px;
 		    height: 800px;
 		}
 		ul.nav {
-			margin-left: 10%;
-			width: 30%;
+			// margin-left: 10%;
+			width: 40%;
 		}
 	}
 	
@@ -96,7 +97,7 @@ a:hover {
 	}
 	.cards {
 		.item {
-			padding: 0 30px;
+			padding: 0 20px;
 		}
 	}
 }
@@ -107,6 +108,10 @@ a:hover {
 				height: inherit;
 			}
 		}
+		&.size-xm .item {height: 300px;}
+		&.size-sm .item {height: 360px;}
+		&.size-md .item {height: 420px;}
+		&.size-lg .item {height: 460px;}
 		.item {
 			margin-bottom: 40px;
 			img {
@@ -182,6 +187,7 @@ a:hover {
 	margin: 0 auto;
 }
 
+.m-0 { margin: 0; }
 .m-20 { margin: 20px 0; }
 .m-30 { margin: 30px 0; }
 .m-40 { margin: 40px 0; }

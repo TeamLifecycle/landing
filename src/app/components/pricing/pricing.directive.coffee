@@ -58,9 +58,9 @@ angular.module 'landing'
 
 setLevel = (scope, numPeople) ->
     console.log numPeople
-    if numPeople < 1
+    if numPeople <= 20000
       scope["level"] = 1
-    else if numPeople < 200000
+    else if numPeople < 100000
       scope["level"] = 2
     else
       scope["level"] = 3

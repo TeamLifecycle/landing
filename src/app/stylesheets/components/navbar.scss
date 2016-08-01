@@ -1,9 +1,10 @@
 @import '../variables';
 @import '../mixins';
 
-nav {
+nav#top {
 	position: absolute;
 	background: transparent;
+	padding: 6px 0 6px;
 	.navbar-brand {
 		width: 200px;
 		background-repeat: no-repeat;
@@ -34,7 +35,7 @@ nav {
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.dark.png);
-			@include image-2x("/assets/img/logo/logo.dark-2x.png",  130px, auto);
+			@include image-2x("/assets/img/logo/logo.dark-2x.png",  110px, auto);
 		}
 		.navbar-nav {
 			&> li {
@@ -64,7 +65,7 @@ nav {
 		}
 		.navbar-brand {
 			background-image: url(/assets/img/logo/logo.white.png);
-			@include image-2x("/assets/img/logo/logo.white-2x.png",  140px, auto);
+			@include image-2x("/assets/img/logo/logo.white-2x.png",  110px, auto);
 		}
 		.navbar-collapse.in {
 			background: rgb(36, 44, 66);
