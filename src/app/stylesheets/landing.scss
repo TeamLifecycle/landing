@@ -36,12 +36,6 @@
 			}
 		}
 	}
-	// section#marketing-2 {
-	// 	img {
-	// 		width: 170px;
-	// 	}
-	// }
-
 }
 
 @include respond-to(sm) {
@@ -59,6 +53,39 @@
 				}
 			}
 			.dudes {
+				height: 800px;
+				img {
+					position: absolute;
+					&.dude-1 {
+						left: 3%;
+						top: 30%;
+					}
+					&.dude-2 {
+						left: 15%;
+						top: 60%;
+					}
+					&.dude-3 {
+						left: calc(50% - 35.5px);
+						top: 45%;
+					}
+					&.dude-4 {
+						right: 24%;
+						top: 50%;
+					}
+					&.dude-5 {
+						right: 3%;
+						top: 40%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include respond-to(md) {
+	.page-landing {
+		section#header {
+			.dudes {
 				height: 690px;
 				img {
 					position: absolute;
@@ -68,7 +95,7 @@
 					}
 					&.dude-2 {
 						left: 25%;
-						bottom: 50%;
+						top: 20%;
 					}
 					&.dude-3 {
 						left: calc(50% - 35.5px);
@@ -76,7 +103,7 @@
 					}
 					&.dude-4 {
 						right: 24%;
-						bottom: 36%;
+						top: 24%;
 					}
 					&.dude-5 {
 						right: 3%;
