@@ -74,7 +74,7 @@ footer.footer {
 
 @include respond-to(md) {
 	$oneHeight: 830px;
-	$twoHeight: 498px;
+	$twoHeight: 368px;
 	$threeHeight: 70px;
 	footer.footer {
 		height: calc(#{$oneHeight} + #{$twoHeight} + #{$threeHeight});
