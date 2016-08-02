@@ -4,7 +4,6 @@
 nav#top {
 	position: fixed;
 	background: transparent;
-	padding: 6px 0 6px;
 	.navbar-brand {
 		width: 200px;
 		background-repeat: no-repeat;
@@ -134,6 +133,7 @@ nav#top {
 
 @include respond-to(sm) {
 	nav#top {
+		padding: 6px 15px 6px;
 		.dropdown-menu {
 			top: 60px;
 			border: none;

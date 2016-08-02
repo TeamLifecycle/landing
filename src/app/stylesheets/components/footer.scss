@@ -95,20 +95,20 @@ footer.footer {
 
 @include respond-to(lg) {
 	$oneHeight: 1030px;
-	$twoHeight: 400px;
+	$twoHeight: 300px;
 	$threeHeight: 70px;
 	footer.footer {
-		background-position-y: 120px;
-		height: calc(#{$oneHeight} + #{$twoHeight});
+		background-position-y: 10px;
+		// height: calc(#{$oneHeight} + #{$twoHeight});
 		// background-size: auto calc(#{$oneHeight} + #{$twoHeight});
-		background-size: contain;
+		background-size: cover;
 		.cta {
-			height: $oneHeight;
-			padding-top: 280px;
+			// height: $oneHeight;
+			padding-top: 160px;
 		}
 		.nav {
-			height: $twoHeight;
-			bottom: 10px;
+			// height: $twoHeight;
+			bottom: 30px;
 			position: absolute;
 			left: 0;
 			right: 0;
