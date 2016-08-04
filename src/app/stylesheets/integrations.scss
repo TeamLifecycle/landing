@@ -52,12 +52,15 @@
 		background-size: 1500px;
 		.title {
 			font-size: 18px;
+			margin-bottom: 0;
+			margin-top: 5px;
 		}
 		.coming-soon {
 			font-size: 13px;
 		}
 		p {
 			font-size: 15px;
+			margin-bottom: 5px;
 		}
 	}
 	section#integrations {
@@ -68,7 +71,7 @@
 		// height:1170px;
 		.title {
 			display: inline-block;
-			margin-bottom: 0;
+		// 	margin-bottom: 0;
 		}
 		.panel {
 			text-align: left;
