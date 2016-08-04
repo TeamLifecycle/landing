@@ -32,6 +32,14 @@
 	}
 }
 
+@include respond-to(lg) {
+	.page-support {
+		.special-bg {
+			padding-top: 20px;
+		}
+	}
+}
+
 @include respond-to(xl) {
 	.page-support {
 		.special-bg {
