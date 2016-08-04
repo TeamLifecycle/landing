@@ -7,10 +7,20 @@
 	background-size: auto 1000px;
 	background-position-y: -310px;
 	section#header {
-		height: 850px;
+		height: 950px;
 	}
 	div#pricing-widget {
 		margin-top: 50px;
+	}
+}
+
+@include respond-to(lg) {
+	.page-pricing {
+		.features {
+			header {
+				margin-bottom: 30px;
+			}
+		}
 	}
 }
 
@@ -25,7 +35,7 @@
 
 @include respond-to(xxl) {
 	.page-pricing {
-		background-position-y: -850px;
+		background-position-y: -950px;
 	}
 
 }

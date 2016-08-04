@@ -5,7 +5,7 @@
       <h6 class="text-white">
         Lifecycle Packages
       </h6>
-      <h1 class="text-white normal">Pricing Packages Starting at $0</h1>
+      <h1 class="text-white normal font-secondary">Pricing Packages Starting at $0</h1>
       <div id="pricing-widget">
         <pricing-widget></pricing-widget>
       </div>
@@ -13,12 +13,20 @@
   </section>
   
   <!-- show only if marketing selected -->
-  <section id="marketing-features" class="container clearfix text-center" ng-show="pricingType == 'marketing'">
+  <section id="marketing-features" class="container features clearfix text-center" ng-show="pricingType == 'marketing'">
+    <header class="">
+      <h5 class="brand-grey normal">Campaigns Features</h5>
+      <h4>Chatbots, CRM, &amp; Unlimited Messages - Included</h4>
+    </header>
     <features-marketing></features-marketing>
   </section>
 
   <!-- show only if support selected -->
-  <section id="support-features" class="clearfix text-center" ng-show="pricingType == 'support'">
+  <section id="support-features" class="container features clearfix text-center" ng-show="pricingType == 'support'">
+    <header class="">
+      <h5 class="brand-grey normal">Conversations Features</h5>
+      <h4>Chatbots, CRM, &amp; Unlimited Messages - Included</h4>
+    </header>
     <features-support></features-support>
   </section>
 
@@ -28,7 +36,9 @@
     <h3 class="text-center title brand-primary">Frequently Asked Questions</h3>
     <div class="breathe-sm">
       <div class="container">
-        <faq></faq>
+        <div class="col-lg-offset-1 col-lg-10">
+          <faq></faq>
+        </div>
       </div>
     </div>
   </section>
