@@ -74,7 +74,7 @@
 					width: 400px;
 				}
 				&.spaceship {
-					width: 350px;
+					width: 280px;
 					left: 65%;
 					top: 1%;
 				}
@@ -83,7 +83,7 @@
 	}
 }
 
-@include respond-to(lg) {
+@include respond-to(md) {
 	.page-marketing {
 		section#header {
 			img {
@@ -97,14 +97,14 @@
 				&.parachute-2 {
 					width: 160px;
 					top: 40%;
+					right: 35%;
 					left: inherit;
-					right: 42%;
 				}
 				&.parachute-3 {
 					right: 10%;
 					top: 50%;
 					left: inherit;
-					width: 400px;
+					width: 300px;
 				}
 				&.spaceship {
 					width: 250px;
@@ -134,7 +134,7 @@
 			}
 			&.parachute-3 {
 				right: 10%;
-				top: 50%;
+				top: 40%;
 				top: 300px;
 			}
 			&.spaceship {

@@ -119,8 +119,21 @@
 @include respond-to(xl) {
 	.page-landing {
 		background-position-y: inherit;
-		background-size: contain;
+		background-size: 1999px;
 		background-position-y: -450px;
+		section#header {
+			.dudes {
+				height: 690px;
+				img {
+					position: absolute;
+					&.dude-1 { top: 0%; }
+					&.dude-2 { top: 20%; }
+					&.dude-3 { top: 10%; }
+					&.dude-4 { top: 24%; }
+					&.dude-5 { top: -1%; }
+				}
+			}
+		}
 	}
 
 }
@@ -128,6 +141,7 @@
 @include respond-to(xxl) {
 	.page-landing {
 		background-position-y: -850px;
+		background-size: 2600px;
 	}
 
 }
