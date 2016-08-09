@@ -57,9 +57,10 @@
     <!-- angular templates will be automatically converted in js and inserted here -->
     <!-- endinject -->
     <!-- endbuild -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/lifecycle-cdn/livechat-widget/socket.io.js"></script>
-    <script type="text/javascript" id="lifecycle-live-chat" class="lifecycle-live-chat" lifecycle-api-key="cd1b4d48721050da6c980ce7">
+
+
+
+    <script type="text/javascript" lifecycle-api-key="cd1b4d48721050da6c980ce7">
       (function() {
         function async_load(){
           var s = document.createElement('script');
@@ -67,7 +68,7 @@
           s.async = true;
           var theUrl = 'https://s3-us-west-2.amazonaws.com/lifecycle-cdn/livechat-widget/widget.js';
           s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + 'ref=' + encodeURIComponent(window.location.href);
-          var embedder = document.getElementById('lifecycle-live-chat');
+          var embedder = document.getElementsByTagName('lifecycle')[0];
           embedder.parentNode.insertBefore(s, embedder);
         }
         if (window.attachEvent)
@@ -76,7 +77,13 @@
           window.addEventListener('load', async_load, false);
       })();
     </script>
-    <a id='lifecycle-live-chat-link' href='#' style="position:fixed; bottom: 0; right: 0; margin-right: 20px; margin-bottom: 20px">Open Live Chat</a>
+    <lifecycle></lifecycle>
+
+
+
+
+
+
 
   </body>
 </html>
