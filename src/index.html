@@ -60,14 +60,14 @@
 
 
 
-    <script type="text/javascript" lifecycle-api-key="cd1b4d48721050da6c980ce7">
+    <script lifecycle-api-key="cd1b4d48721050da6c980ce7" dev>
       (function() {
         function async_load(){
           var s = document.createElement('script');
           s.type = 'text/javascript';
           s.async = true;
-          var theUrl = 'https://s3-us-west-2.amazonaws.com/lifecycle-cdn/livechat-widget/widget.js';
-          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + 'ref=' + encodeURIComponent(window.location.href);
+          var url = 'https://s3-us-west-1.amazonaws.com/lifecycle-widget/src/js/widget.js';
+          s.src = url + ( url.indexOf("?") >= 0 ? "&" : "?") + 'ref=' + encodeURIComponent(window.location.href);
           var embedder = document.getElementsByTagName('lifecycle')[0];
           embedder.parentNode.insertBefore(s, embedder);
         }
