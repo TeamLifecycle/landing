@@ -5,6 +5,15 @@
     @include row-centered();
 }
 
+.featurette {
+    b {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .featurette-heading {
+        margin-top: 10px;
+    }
+}
 
 @include respond-to(sm) {
   .featurette {
