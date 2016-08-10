@@ -44,11 +44,14 @@
 			}
 		}
 	}
+	.panel {
+		border-radius: 7px;
+	}
 	section#all-integrations {
 		background-image: url(/assets/img/integrations/hand_bg.png);
 		background-repeat: no-repeat;
 		background-position-x: center;
-		background-position-y: 400px;
+		background-position-y: 250px;
 		background-size: 1500px;
 		.title {
 			font-size: 18px;
