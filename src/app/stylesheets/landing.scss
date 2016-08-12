@@ -25,14 +25,17 @@
 				&.dude-1 {
 					left: 3%;
 					top: 58%;
+					max-height: 125px;
 				}
 				&.dude-3 {
 					left: 40%;
 					top: 77%;
+					max-height: 107px;
 				}
 				&.dude-5 {
 					right: 1%;
 					top: 54%;
+					max-height: 230px;
 				}
 			}
 		}
@@ -64,6 +67,7 @@
 					&.dude-2 {
 						left: 15%;
 						top: 60%;
+						max-height: 235px;
 					}
 					&.dude-3 {
 						left: calc(50% - 35.5px);
@@ -72,6 +76,7 @@
 					&.dude-4 {
 						right: 24%;
 						top: 50%;
+						max-height: 300px;
 					}
 					&.dude-5 {
 						right: 3%;
