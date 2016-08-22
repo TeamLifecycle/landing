@@ -11,6 +11,9 @@
 	// }
 	section#header {
 		height: 740px;
+		.hero {
+			z-index: 2;
+		}
 		.cta {
 			margin-top: 15px;
 		}

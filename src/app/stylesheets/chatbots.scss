@@ -5,10 +5,11 @@
 	background-image: url(/assets/img/chatbots/header_illustration_opacity.png);
 	background-repeat: no-repeat;
 	background-position-x: right;
-	background-position-y: 310px;
-	background-size: 500px;
+	background-position-y: 170px;
+	background-size: 310px;
 	section#header {
-		height: 720px;
+		height: 520px;
+		padding-top: 40px;
 	}
 	section#marketing-93 {
 		background-image: url(/assets/img/marketing/phone_bg.png);
@@ -37,6 +38,10 @@
 	.page-chatbots {
 		background-image: url(/assets/img/chatbots/header_illustration.png);
 		background-position-y: 110px;
+		background-size: 500px;
+		section#header {
+			padding-top: 100px;
+		}
 		section#marketing-44 {
 			height: 900px;
 		}
@@ -45,6 +50,10 @@
 
 @include respond-to(lg) {
 	.page-chatbots {
+		background-size: 500px;
+		section#header {
+			height: 720px;
+		}
 		section#marketing-93 {
 			padding-top: 100px;
 			background-size: cover;
