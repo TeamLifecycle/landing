@@ -8,6 +8,24 @@
 
     <script>clickChat = function() { var SMS_NUMBER = "+15136571992"; if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location = "sms://" + SMS_NUMBER; } else { window.location = "http://m.me/lifecyclehq" } } </script>
 
+    <script type="text/javascript" id="lifecycle-engage" class="lifecycle-engage" lifecycle-api-key="cd1b4d48721050da6c980ce7" dev>
+      (function() {
+        function async_load(){
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          var theUrl = 'https://s3.amazonaws.com/lifecycle-widget-engage/widget.js';
+          s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + 'ref=' + encodeURIComponent(window.location.href);
+          var embedder = document.getElementById('lifecycle-engage');
+          embedder.parentNode.insertBefore(s, embedder);
+        }
+        if (window.attachEvent)
+          window.attachEvent('onload', async_load);
+        else
+          window.addEventListener('load', async_load, false);
+      })();
+    </script>
+
     <section class="cta text-center col-xs-12 col-md-8 col-md-offset-2">
         <h3 class="blurb text-white font-secondary" ng-bind-html="ctaText"></h3>
         <a href="{{$root.config.webapp.signup}}" class="btn btn-lg btn-info uppercase">{{ctaButtonText}}</a>
@@ -75,7 +93,7 @@
                 </small>
             </div>
             <div class="col-xs-6 text-right social">
-                <a target="_blank" href="" onclick="clickChat()">
+                <a id="lifecycle-engage-show" target="_blank" href="">
                     <img src="/assets/img/engage/bot.png" class="widget-engage">
                 </a>
                 <a target="_blank" href="https://twitter.com/lifecycleio">
