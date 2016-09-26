@@ -6,7 +6,9 @@
     <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <!-- Calendly link widget end -->
 
-    <script>clickChat = function() { var SMS_NUMBER = "+15136571992"; if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location = "sms://" + SMS_NUMBER; } else { window.location = "http://m.me/lifecyclehq" } } </script>
+    <!-- <script>clickChat = function() { var SMS_NUMBER = "+15136571992"; if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { window.location = "sms://" + SMS_NUMBER; } else { window.location = "http://m.me/lifecyclehq" } } </script> -->
+
+    <script>window.onload = function() {var SMS_NUMBER = "+16282276075";var SMS_NUMBER_PRETTY = "(628) 227-6075"; var link = "sms://" + SMS_NUMBER; var tag = document.getElementById('lifecycle-sms'); if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {tag.innerHTML = '<div style="width: 100%; height: 40px;cursor: pointer;" onclick="window.location.assign('+ link + '")"><div style="position: absolute;top: 50%; left:50%; transform: translateX(-50%) translateY(-50%);"><img src="https://s3-us-west-2.amazonaws.com/lifecycle-cdn/textus/sms.png" style="height: 13px;margin-right: 3px;">&nbsp;Text Us</div></div>'; tag.style.display = 'block'; } else { tag.style.display = 'none'; } }</script>
 
 <!--     <script type="text/javascript" id="lifecycle-engage" class="lifecycle-engage" lifecycle-api-key="a9ecec1c35d99474571163ca" dev>
       (function() {
@@ -44,7 +46,7 @@
                 <li><a class="hand" onclick="Calendly.showPopupWidget('https://calendly.com/jonathanlane');return false;">Schedule a Demo</a></li>
                 <!-- <li><a href="#/faq">FAQ</a></li> -->
                 <li><a href="mailto:support@lifecycle.io">Customer Support</a></li>
-            </ul>
+            </ul>            
         </div>
         <!-- product -->
         <div class="col-xs-3">
@@ -82,11 +84,11 @@
         </div>
     </div>
     <div class="made-in text-white">
-        <div class="visible-xs center-xs">
+        <!-- <div class="visible-xs center-xs">
             <small class="semibold">
                 Made with <span class="brand-pink">❤</span>&nbsp;️in Cincinnati, Chicago, &amp; San Francisco
-            </small>
-        </div>
+            </small>            
+        </div> -->
         <div class="hidden-xs container">
             <div class="col-xs-6 text-left">
                 <small class="semibold">
@@ -109,6 +111,7 @@
             </div>
         </div>
     </div>
+    <div id="lifecycle-sms" style="display:inline-block;background-color: #58c6d0;color:#fff;padding: 5px 10px;font-size: 13px;width: 100%;height: 40px;position: fixed;bottom: 0"></div>
 
 
 
