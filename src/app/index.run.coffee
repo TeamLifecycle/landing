@@ -14,7 +14,7 @@ angular.module 'landing'
     	when "stage.lifecycle.io"
     		config.webapp.host = "https://app-stage.lifecycle.io"
 
-    config.webapp.signup = "#{config.webapp.host}/sign-up/waitinglist"
+    config.webapp.signup = "#{config.webapp.host}/sign-up/beta"
     config.webapp.signin = "#{config.webapp.host}/sign-in"
     config.signin = "#{config.webapp.host}/sign-in"
 
